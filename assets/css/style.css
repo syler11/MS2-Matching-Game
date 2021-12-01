@@ -12,9 +12,13 @@ body {
     background-color: #ccc;
 }
 
-p {
-    font-weight: bold;
+a {
+    text-decoration: none;
+    color: chocolate;
+    font-size: 25px;
+    margin: 2rem;
 }
+
 
 ul {
     list-style: none;
@@ -25,8 +29,17 @@ li {
     vertical-align: middle;
 }
 
+hr {
+    color: chocolate;
+    border: solid 3px;
+}
+
 footer a {
     font-size: 2rem;
     padding: 1rem;
-    color: black;
+    color: chocolate;
+}
+
+.game-selector {
+    margin: 1rem;
 }
