@@ -73,10 +73,9 @@ footer a {
 }
 
 .animalCard {
-    margin: 10px;
+    margin-top: 10px;
 }
 
-.fas {
-    font-size: 20px;
-    padding-left: 20px;
+.timer {
+    margin-right: 1rem;
 }
