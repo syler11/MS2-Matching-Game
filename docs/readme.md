@@ -1,3 +1,11 @@
+# Milestone-2 Project / Pair the animals /
+
+![page mockup](/assets/images/mockup-ffgym.png)
+
+View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
+
+
+### Image credits
 https://www.rawpixel.com/ - background.jpg
 https://www.rawpixel.com/ - question-mark.jpg
 https://www.rawpixel.com/nunny - dog.png
