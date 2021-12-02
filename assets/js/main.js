@@ -18,7 +18,12 @@ function displayGame() {
 }
 
 document.getElementById('easy-game').addEventListener('click', loadEasyGame);
+document.getElementById('medium-game').addEventListener('click', loadMediumGame);
+document.getElementById('hard-game').addEventListener('click', loadHardGame);
 
 function loadEasyGame() {
     displayGame();
+    stepsCount.innerHTML = `0`;
+    scoreCount.innerHTML = `0`;
+    
 }
