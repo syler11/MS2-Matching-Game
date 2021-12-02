@@ -36,6 +36,12 @@ const animalCards = [
     { name: 'elephant', img: './assets/images/elephant.png', },
     { name: 'giraffe', img: './assets/images/giraffe.png', },
     { name: 'giraffe', img: './assets/images/giraffe.png', },
+    { name: 'turtle', img: './assets/images/turtle.png', },
+    { name: 'turtle', img: './assets/images/turtle.png', },
+    { name: 'frog', img: './assets/images/frog.png', },
+    { name: 'frog', img: './assets/images/frog.png', },
+    { name: 'monkey', img: './assets/images/monkey.png', },
+    { name: 'monkey', img: './assets/images/monkey.png', },
     
 ];
 
