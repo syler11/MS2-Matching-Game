@@ -18,12 +18,42 @@ function displayGame() {
 }
 
 document.getElementById('easy-game').addEventListener('click', loadEasyGame);
-document.getElementById('medium-game').addEventListener('click', loadMediumGame);
-document.getElementById('hard-game').addEventListener('click', loadHardGame);
+document.getElementById('medium-game').addEventListener('click', loadEasyGame);
+document.getElementById('hard-game').addEventListener('click', loadEasyGame);
+
+var totalSeconds = 0;
+
+function setTimer(){
+    ++totalSeconds; 
+    var seconds = document.getElementById('seconds');
+    seconds.innerHTML = pad(totalSeconds%60);
+    var minutes = document.getElementById('minutes');
+    minutes.innerHTML = pad(parseInt(totalSeconds/60));
+}
+
+function pad(val){
+    var valString = val + '';
+    if(valString.length < 2) {
+        return '0' + valString;
+    } else { return valString;
+    }
+}
 
 function loadEasyGame() {
     displayGame();
     stepsCount.innerHTML = `0`;
     scoreCount.innerHTML = `0`;
-    
+    setInterval(setTimer, 1200);
+}
+
+document.getElementById('reload').addEventListener('click', resetGame);
+
+function resetGame() {
+    resetTimer();
+}
+
+function resetTimer() {
+    document.getElementById('seconds').innerHTML = `00`;
+    document.getElementById('minutes').innerHTML = `00`;
+    totalSeconds = `0`;
 }
