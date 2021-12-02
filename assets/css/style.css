@@ -69,3 +69,8 @@ footer a {
     margin-bottom: 10px;
     clear: both;
 }
+
+.fas {
+    height: 50px;
+    width: 50px;
+}

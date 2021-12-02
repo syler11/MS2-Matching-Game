@@ -21,6 +21,24 @@ document.getElementById('easy-game').addEventListener('click', loadEasyGame);
 document.getElementById('medium-game').addEventListener('click', loadEasyGame);
 document.getElementById('hard-game').addEventListener('click', loadEasyGame);
 
+/* Animal card array */
+
+const animalCards = [
+    { name: 'dog', img: './assets/images/dog.png', },
+    { name: 'dog', img: './assets/images/dog.png', },
+    { name: 'cat', img: './assets/images/cat.png', },
+    { name: 'cat', img: './assets/images/cat.png', },
+    { name: 'turtle', img: './assets/images/turtle.png', },
+    { name: 'turtle', img: './assets/images/turtle.png', },
+    { name: 'lion', img: './assets/images/lion.png', },
+    { name: 'lion', img: './assets/images/lion.png', },
+    { name: 'elephant', img: './assets/images/elephant.png', },
+    { name: 'elephant', img: './assets/images/elephant.png', },
+    { name: 'giraffe', img: './assets/images/giraffe.png', },
+    { name: 'giraffe', img: './assets/images/giraffe.png', },
+    
+];
+
 var totalSeconds = 0;
 
 function setTimer(){
