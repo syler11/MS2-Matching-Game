@@ -57,3 +57,15 @@ footer a {
 .help {
     font-size: 20px;
 }
+
+/* CSS uded to hide DOM elements */
+
+.no-display {
+    visibility: hidden;
+}
+
+#gameBoard {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    clear: both;
+}
