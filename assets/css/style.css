@@ -66,11 +66,17 @@ footer a {
 
 #gameBoard {
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     clear: both;
+    width: 70%
+}
+
+.animalCard {
+    margin: 10px;
 }
 
 .fas {
-    height: 50px;
-    width: 50px;
+    font-size: 20px;
+    padding-left: 20px;
 }

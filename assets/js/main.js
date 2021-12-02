@@ -39,6 +39,24 @@ const animalCards = [
     
 ];
 
+/* Creating gameboard with showing back of the card */
+
+const gameGrid = document.querySelector('#gameBoard');
+
+function launchGameBoard() {
+    animalCards.sort(() => 0.5 - Math.random());
+    for (let i = 0; i < animalCards.length; i++) {
+        var animalCard = document.createElement('img');
+        animalCard.setAttribute('src', './assets/images/question-mark.jpg');
+        animalCard.setAttribute('data-id', i);
+        animalCard.setAttribute('alt', 'Card back, select to flip over');
+        animalCard.classList.add('col-4', 'col-lg-2', 'animalCard');
+        gameGrid.appendChild(animalCard);
+    }
+}
+
+/* Game timer */
+
 var totalSeconds = 0;
 
 function setTimer(){
@@ -56,20 +74,23 @@ function pad(val){
     } else { return valString;
     }
 }
-
+/* Loading the game after selecting the level on the index page */
 function loadEasyGame() {
     displayGame();
+    launchGameBoard();
     stepsCount.innerHTML = `0`;
     scoreCount.innerHTML = `0`;
     setInterval(setTimer, 1200);
 }
 
+
+/* Reloading the game */
 document.getElementById('reload').addEventListener('click', resetGame);
 
 function resetGame() {
     resetTimer();
 }
-
+/* Resetting timer */ 
 function resetTimer() {
     document.getElementById('seconds').innerHTML = `00`;
     document.getElementById('minutes').innerHTML = `00`;
