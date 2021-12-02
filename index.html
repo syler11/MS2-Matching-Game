@@ -43,13 +43,14 @@
                     <h3 class="my-4"><strong>Select difficulty to start the game</strong></h3>
                 </div>
             </div>
-            <!-- Level selector-->
+            <!-- Level selector before the board is loaded-->
             <div id="start-game-prompt" class="text-center">
                 <button id="easy-button" class="game-selector">Easy</button>
                 <button id="medium-button" class="game-selector">Medium
                 </button>
                 <button id="hard-button" class="game-selector">Hard</button>
             </div>
+            <!-- Level selector when the game has loaded-->
             <div id="leveSelector" class="text-center">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" 
                     data-bs-toggle="dropdown" aria-expanded="false">Select Level</button>
@@ -59,6 +60,16 @@
                       <li><button id="hard-button" class="dropdown-level">Hard</button></li>
                     </ul>
                         <i class="far fa-stopwatch"></i> <span id="minutes">0</span>:<span id="seconds">00</span>
+            </div>
+            <!-- Area where the cards will load-->
+            <div id="gameBoard" class="text-center"></div>
+            <!-- Area for buttons and outputs-->
+            <div id="gameOutput" class="text-center">
+                <h3 id="steps" class="text-center">Steps: <span id="stepsCount"></span></h3>
+                <h3 id="score" class="text-center">Score: <span id="scoreCount"></span></h3>
+                <button id="reload" class="text-center">Reload Game</button>
+                <a href="contact.html"><button class="text-center help">Need Help?</button></a>
+            
             </div>
 
             <hr>
