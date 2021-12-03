@@ -79,3 +79,10 @@ footer a {
 .timer {
     margin-right: 1rem;
 }
+
+.button {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px;
+}
