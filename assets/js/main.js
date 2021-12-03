@@ -55,13 +55,14 @@ const animalCards = [
     
 ];
 
-/* Creating gameboard with showing back of the card */
 
+/* Global variable declared */
 const gameGrid = document.querySelector('#gameBoard');
 var animalCardsSelected = [];
 var animalCardsSelectedId = [];
 var animalCardsCorrect = [];
 
+/* Creating gameboard with showing back of the card */
 function launchGameBoard() {
     animalCards.sort(() => 0.5 - Math.random());
     for (let i = 0; i < animalCards.length; i++) {
@@ -121,6 +122,11 @@ function checkMatch() {
         setTimeout(correctMatch, 200); 
 }
 
+}
+
+function correctMatch() {
+    alert('Well done you!');
+    resetGame();
 }
 
 /* Game timer */
