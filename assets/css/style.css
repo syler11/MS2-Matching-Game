@@ -14,9 +14,10 @@ body {
 
 a {
     text-decoration: none;
-    color: chocolate;
+    color: rgb(129, 58, 8);
     font-size: 25px;
     margin: 2rem;
+    font-weight: bold;
 }
 
 
@@ -40,14 +41,14 @@ li {
 }
 
 hr {
-    color: chocolate;
+    color: rgb(129, 58, 8);
     border: solid 3px;
 }
 
 footer a {
     font-size: 2rem;
     padding: 1rem;
-    color: chocolate;
+    color: rgb(129, 58, 8);
 }
 
 .game-selector {
