@@ -58,6 +58,7 @@ const animalCards = [
 const gameGrid = document.querySelector('#gameBoard');
 var animalCardsSelected = [];
 var animalCardsSelectedId = [];
+var animalCardsCorrect = [];
 
 function launchGameBoard() {
     animalCards.sort(() => 0.5 - Math.random());
@@ -65,8 +66,8 @@ function launchGameBoard() {
         var animalCard = document.createElement('img');
         animalCard.setAttribute('src', './assets/images/question-mark.png');
         animalCard.setAttribute('data-id', i);
-        animalCard.setAttribute('alt', 'Card back, select to flip over');
-        animalCard.classList.add('col-4', 'col-lg-2', 'animalCard');
+        animalCard.setAttribute('alt', 'Card back, select to turn');
+        animalCard.classList.add('col-4', 'col-lg-2', 'animalCard'); /* Use this to resize the gameBoard area */
         animalCard.addEventListener('click', turnAnimalCard);
         gameGrid.appendChild(animalCard);
     }
@@ -89,6 +90,39 @@ function turnAnimalCard() {
     animalCardsSelected.length = Math.min(animalCardsSelected.length, 2);
 }
 
+function checkMatch() {
+    var animalCards = document.querySelectorAll('img');
+    const animalCardFirst = animalCardsSelectedId[0];
+    const animalCardSecond = animalCardsSelectedId[1];
+  
+    if (animalCardsSelected[0] === animalCardsSelected[1] && animalCardFirst !== animalCardSecond) {
+        animalCardsCorrect.push(animalCardsSelected);
+        stepsCounter();
+        animalCards[animalCardFirst].removeEventListener("click", turnAnimalCard);
+        animalCards[animalCardSecond].removeEventListener("click", turnAnimalCard);
+        animalCards[animalCardFirst].classList.add('match');
+        animalCards[animalCardSecond].classList.add('match');
+    } else {
+        stepsCounter();
+        setTimeout(changeCardBack, 1000); /* Set time how long the two cards would show to users */
+        function changeCardBack() {
+            animalCards[animalCardFirst].setAttribute('src', './assets/images/question-mark.png');
+            animalCards[animalCardSecond].setAttribute('src', './assets/images/question-mark.png');
+            animalCards[animalCardFirst].setAttribute('alt', 'Card back, select to turn');
+            animalCards[animalCardSecond].setAttribute('alt', 'Card back, select to turn');
+        };
+
+    animalCardsSelected = [];
+    animalCardsSelectedId =[];
+    scoreCount.textContent = animalCardsCorrect.length;
+    if (animalCardsCorrect.length === animalCards.length/2) {
+        setTimeout(correctMatch, 200); 
+}
+
+}
+
+}
+
 /* Game timer */
 
 var totalSeconds = 0;
@@ -109,6 +143,10 @@ function pad(val){
     }
 }
 
+/* Steps counter */
+function stepsCounter() {
+    stepsCount.innerHTML ++;
+}
 
 /* Reloading the game */
 document.getElementById('reload').addEventListener('click', resetGame);
