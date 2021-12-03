@@ -17,6 +17,8 @@ function displayGame() {
     document.getElementById('loadGame').remove();
 }
 
+/* Main page Level selector */
+
 document.getElementById('easy-game').addEventListener('click', loadEasyGame);
 document.getElementById('medium-game').addEventListener('click', loadEasyGame);
 document.getElementById('hard-game').addEventListener('click', loadEasyGame);
@@ -104,21 +106,19 @@ function checkMatch() {
         animalCards[animalCardSecond].classList.add('match');
     } else {
         stepsCounter();
-        setTimeout(changeCardBack, 1000); /* Set time how long the two cards would show to users */
+        setTimeout(changeCardBack, 600); /* Set time how long the two cards would show to users */
         function changeCardBack() {
             animalCards[animalCardFirst].setAttribute('src', './assets/images/question-mark.png');
             animalCards[animalCardSecond].setAttribute('src', './assets/images/question-mark.png');
             animalCards[animalCardFirst].setAttribute('alt', 'Card back, select to turn');
             animalCards[animalCardSecond].setAttribute('alt', 'Card back, select to turn');
         };
-
+    }
     animalCardsSelected = [];
     animalCardsSelectedId =[];
     scoreCount.textContent = animalCardsCorrect.length;
     if (animalCardsCorrect.length === animalCards.length/2) {
         setTimeout(correctMatch, 200); 
-}
-
 }
 
 }
