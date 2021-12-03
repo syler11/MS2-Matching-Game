@@ -21,6 +21,14 @@ document.getElementById('easy-game').addEventListener('click', loadEasyGame);
 document.getElementById('medium-game').addEventListener('click', loadEasyGame);
 document.getElementById('hard-game').addEventListener('click', loadEasyGame);
 
+/* Loading the game after selecting the level on the index page */
+function loadEasyGame() {
+    displayGame();
+    launchGameBoard();
+    stepsCount.innerHTML = `0`;
+    scoreCount.innerHTML = `0`;
+    setInterval(setTimer, 1200);
+}
 /* Animal card array */
 
 const animalCards = [
@@ -36,8 +44,8 @@ const animalCards = [
     { name: 'elephant', img: './assets/images/elephant.png', },
     { name: 'giraffe', img: './assets/images/giraffe.png', },
     { name: 'giraffe', img: './assets/images/giraffe.png', },
-    { name: 'turtle', img: './assets/images/turtle.png', },
-    { name: 'turtle', img: './assets/images/turtle.png', },
+    { name: 'kangaroo', img: './assets/images/kangaroo.png', },
+    { name: 'kangaroo', img: './assets/images/kangaroo.png', },
     { name: 'frog', img: './assets/images/frog.png', },
     { name: 'frog', img: './assets/images/frog.png', },
     { name: 'monkey', img: './assets/images/monkey.png', },
@@ -64,11 +72,21 @@ function launchGameBoard() {
     }
 }
 
-/* Turns cards by clicking */
+/* Turns cards by clicking  Credit: Tara Rhoseyn */
 function turnAnimalCard() {
     var animalCardId = this.getAttribute('data-id');
     animalCardsSelected.push(animalCards[animalCardId].name);
     animalCardsSelectedId.push(animalCardId);
+    this.setAttribute('alt', animalCards[animalCardId].name);
+    this.setAttribute('src', animalCards[animalCardId].img);
+
+    if (animalCardsSelected.length === 2) {
+        setTimeout(checkMatch, 300);
+    } else if (animalCardsSelected.length > 2) {
+        this.setAttribute('src', './assets/images/question-mark.png');
+    }
+    /* Limits card turns to two */
+    animalCardsSelected.length = Math.min(animalCardsSelected.length, 2);
 }
 
 /* Game timer */
@@ -90,20 +108,14 @@ function pad(val){
     } else { return valString;
     }
 }
-/* Loading the game after selecting the level on the index page */
-function loadEasyGame() {
-    displayGame();
-    launchGameBoard();
-    stepsCount.innerHTML = `0`;
-    scoreCount.innerHTML = `0`;
-    setInterval(setTimer, 1200);
-}
 
 
 /* Reloading the game */
 document.getElementById('reload').addEventListener('click', resetGame);
 
 function resetGame() {
+    stepsCount.innerHTML = `0`;
+    scoreCount.innerHTML = `0`;
     resetTimer();
 }
 /* Resetting timer */ 
