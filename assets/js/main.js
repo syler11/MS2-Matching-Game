@@ -1,7 +1,7 @@
 /* Hide certain dom elements on page load */
 
 
-    document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('levelSelector').classList.add('no-display');
     document.getElementById('gameBoard').classList.add('no-display');
     document.getElementById('gameOutput').classList.add('no-display');
@@ -52,7 +52,7 @@ const animalCards = [
     { name: 'frog', img: './assets/images/frog.png', },
     { name: 'monkey', img: './assets/images/monkey.png', },
     { name: 'monkey', img: './assets/images/monkey.png', },
-    
+
 ];
 
 
@@ -97,7 +97,7 @@ function checkMatch() {
     var animalCards = document.querySelectorAll('img');
     const animalCardFirst = animalCardsSelectedId[0];
     const animalCardSecond = animalCardsSelectedId[1];
-  
+
     if (animalCardsSelected[0] === animalCardsSelected[1] && animalCardFirst !== animalCardSecond) {
         animalCardsCorrect.push(animalCardsSelected);
         stepsCounter();
@@ -116,11 +116,11 @@ function checkMatch() {
         };
     }
     animalCardsSelected = [];
-    animalCardsSelectedId =[];
+    animalCardsSelectedId = [];
     scoreCount.textContent = animalCardsCorrect.length;
-    if (animalCardsCorrect.length === animalCards.length/2) {
-        setTimeout(correctMatch, 200); 
-}
+    if (animalCardsCorrect.length === animalCards.length / 2) {
+        setTimeout(correctMatch, 200);
+    }
 
 }
 
@@ -133,36 +133,48 @@ function correctMatch() {
 
 var totalSeconds = 0;
 
-function setTimer(){
-    ++totalSeconds; 
+function setTimer() {
+    ++totalSeconds;
     var seconds = document.getElementById('seconds');
-    seconds.innerHTML = pad(totalSeconds%60);
+    seconds.innerHTML = pad(totalSeconds % 60);
     var minutes = document.getElementById('minutes');
-    minutes.innerHTML = pad(parseInt(totalSeconds/60));
+    minutes.innerHTML = pad(parseInt(totalSeconds / 60));
 }
 
-function pad(val){
+function pad(val) {
     var valString = val + '';
-    if(valString.length < 2) {
+    if (valString.length < 2) {
         return '0' + valString;
-    } else { return valString;
+    } else {
+        return valString;
     }
 }
 
 /* Steps counter */
 function stepsCounter() {
-    stepsCount.innerHTML ++;
+    stepsCount.innerHTML++;
 }
 
-/* Reloading the game */
+/* Reloading the game with Reload button or Level seletor */
 document.getElementById('reload').addEventListener('click', resetGame);
+document.getElementById('easyLevel').addEventListener('click', resetGame);
 
 function resetGame() {
+    animalCardsSelected = [];
+    animalCardsSelectedId = [];
+    animalCardsCorrect = [];
+    cards = document.querySelectorAll('img');
+    animalCards.sort(() => 0.5 - Math.random());
+    cards.forEach((c) => {
+        c.setAttribute('src', './assets/images/question-mark.png');
+        c.addEventListener('click', turnAnimalCard);
+        c.classList.remove('match');
+    });
     stepsCount.innerHTML = `0`;
     scoreCount.innerHTML = `0`;
     resetTimer();
 }
-/* Resetting timer */ 
+/* Resetting timer */
 function resetTimer() {
     document.getElementById('seconds').innerHTML = `00`;
     document.getElementById('minutes').innerHTML = `00`;
