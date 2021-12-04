@@ -17,9 +17,15 @@ function displayGame() {
     document.getElementById('loadGame').remove();
 }
 
-/* Main page Level selector */
+/* Main page Level selector before the game is initiated */
 
 document.getElementById('easy-game').addEventListener('click', loadEasyGame);
+document.getElementById('medium-game').addEventListener('click', loadEasyGame);
+document.getElementById('hard-game').addEventListener('click', loadEasyGame);
+
+/* In-game Level selector after the game is initiated */
+
+document.getElementById('easyLevel').addEventListener('click', resetGame);
 document.getElementById('medium-game').addEventListener('click', loadEasyGame);
 document.getElementById('hard-game').addEventListener('click', loadEasyGame);
 
