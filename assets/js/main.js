@@ -1,7 +1,7 @@
 /* Hide certain dom elements on page load */
 
 
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('levelSelector').classList.add('no-display');
     document.getElementById('gameBoard').classList.add('no-display');
     document.getElementById('gameOutput').classList.add('no-display');
@@ -40,6 +40,9 @@ function loadEasyGame() {
 
 /* Global variable declared */
 const gameGrid = document.querySelector('#gameBoard');
+const stepsCount = document.querySelector('#stepsCount');
+const scoreCount = document.querySelector('#scoreCount');
+
 var animalCardsSelected = [];
 var animalCardsSelectedId = [];
 var animalCardsCorrect = [];
@@ -58,7 +61,7 @@ function launchGameBoard() {
     }
 }
 
-/* Turns cards by clicking  Credit: Tara Rhoseyn */
+/* Turns cards by clicking  Credit: Ania Kubow */
 function turnAnimalCard() {
     var animalCardId = this.getAttribute('data-id');
     animalCardsSelected.push(animalCards[animalCardId].name);
@@ -71,7 +74,7 @@ function turnAnimalCard() {
     } else if (animalCardsSelected.length > 2) {
         this.setAttribute('src', './assets/images/question-mark.png');
     }
-    /* Limits card turns to two */
+    /* Limits card turns to two before it turn back unless they are a match */
     animalCardsSelected.length = Math.min(animalCardsSelected.length, 2);
 }
 
@@ -89,7 +92,7 @@ function checkMatch() {
         animalCards[animalCardSecond].classList.add('match');
     } else {
         stepsCounter();
-        setTimeout(changeCardBack, 600); /* Set time how long the two cards would show to users */
+        setTimeout(changeCardBack, 600); /* Set time how long the two cards would show to users before they turn back unless they are a match */
         function changeCardBack() {
             animalCards[animalCardFirst].setAttribute('src', './assets/images/question-mark.png');
             animalCards[animalCardSecond].setAttribute('src', './assets/images/question-mark.png');
@@ -107,7 +110,7 @@ function checkMatch() {
 }
 
 function correctMatch() {
-    alert('Well done you!');
+    alert('Well done you! Why not to try some of the other levels?');
     resetGame();
 }
 
