@@ -36,7 +36,11 @@ It was also tested on Apple iPad and iPhone 12. All fully functioning and fully 
 ![index.html Validation](/docs/validation/index.html%20validation.png)  
 ![contact.html Validation](/docs/validation/contact.html%20validation.png)  
 ![404.html Validation](/docs/validation/404.html%20validation.png)
-## *404s:**
+
+### CSS Validation 
+
+![style.css Validation](/docs/validation/style.css%20validation.png)
+## **Bugs:**
 
 ## **7. Deployment:**
 
@@ -45,6 +49,7 @@ It was also tested on Apple iPad and iPhone 12. All fully functioning and fully 
 Credit to https://favicon.io/favicon-converter/ for the Favicon  
 Credit to https://websitemockupgenerator.com/ for the Website mockup picture  
 Credit to https://fontawesome.com/ for the Icona displayed on the website  
+Credit to https://validator.w3.org/ for the html and css validation
 ### Image credits
 https://www.rawpixel.com/ - background.jpg  
 https://www.rawpixel.com/ - question-mark.jpg  
