@@ -16,7 +16,28 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 7. [Deployment](#deployment)
 8. [Credits](#credits)
 
+## **4. Technologies used:**
+The following languages and framework were used to create this project.  
+* HTML5 – provided the main structure of the website.
+* CSS3 – provided the styling of the website and the overall content.
+* Javascript - Vanilla Jac
+* Bootstrap 5.0.0 – provided the responsive structure and some other component such as responsive layout, dropdown menu, and form. 
+* Balsamiq - development tool was used to create the wireframe for the website. 
+* VS Code - VS Code was used for version control to commit and Push to GitHub.
+* GitHub - GitHub is used to store the projects code after being pushed from VS Code.
 
+## **5. Testing:**
+
+Games was developed on Windows OS in Goggle Chrome and it was tested in Miscrosoft Edge.
+It was also tested on Apple iPad and iPhone 12. All fully functioning and fully responsive.
+
+### HTML Validation
+
+## **6. Bugs:**
+
+## **7. Deployment:**
+
+## **8. Credits:**
 ### Media Credits
 Credit to https://favicon.io/favicon-converter/ for the Favicon  
 Credit to https://websitemockupgenerator.com/ for the Website mockup picture  
@@ -34,7 +55,7 @@ https://www.rawpixel.com/ - monkey.png
 https://www.rawpixel.com/ - giraffe.png  
 https://www.rawpixel.com/ - frog.png  
 
-Testing:
+### Acknowledgment
 
-Gaames was developed on Windows OS in Goggle Chrome and it was tested in Miscrosoft Edge.
-It was also tested on Apple iPad and iPhone 12. All fully functioning and fully responsive.
+I would like to thank you to my mentor Mo Shami for the guidance. 
+
