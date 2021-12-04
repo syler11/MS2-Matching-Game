@@ -20,3 +20,8 @@ https://www.rawpixel.com/ - giraffe.png
 https://www.rawpixel.com/ - frog.png
 
 Credit to https://favicon.io/favicon-converter/ for the Favicon
+
+Testing:
+
+Gaames was developed on Windows OS in Goggle Chrome and it was tested in Miscrosoft Edge.
+It was also tested on Apple iPad and iPhone 12. All fully functioning and fully responsive.
