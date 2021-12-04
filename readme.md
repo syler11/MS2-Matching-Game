@@ -33,7 +33,10 @@ It was also tested on Apple iPad and iPhone 12. All fully functioning and fully 
 
 ### HTML Validation
 
-## **6. Bugs:**
+![index.html Validation](/docs/validation/index.html%20validation.png)  
+![contact.html Validation](/docs/validation/contact.html%20validation.png)  
+![404.html Validation](/docs/validation/404.html%20validation.png)
+## *404s:**
 
 ## **7. Deployment:**
 
