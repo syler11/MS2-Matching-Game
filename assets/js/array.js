@@ -21,3 +21,10 @@ const animalCards = [
     { name: 'monkey', img: './assets/images/monkey.png', },
 
 ];
+
+/* function added to avoid two a href link on the same page - Credit to www.stackoverflow.com */
+document.getElementById("contactPage").addEventListener("click", gotoContactPage);
+    
+function gotoContactPage() {
+       window.location.assign("https://syler11.github.io/MS2-Matching-Game/contact.html");
+    }
