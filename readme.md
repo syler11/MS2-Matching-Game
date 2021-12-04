@@ -40,6 +40,12 @@ It was also tested on Apple iPad and iPhone 12. All fully functioning and fully 
 ### CSS Validation 
 
 ![style.css Validation](/docs/validation/style.css%20validation.png)
+
+### Accessibility 
+
+![index.html Accessibility Certificate](/docs/validation/index.html%20accessibility.png)
+![contact.html Accessibility Certificate](/docs/validation/contact.html%20accessibility.png)
+![404.html Accessibility Certificate](/docs/validation/404.html%20accessibility.png)
 ## **Bugs:**
 
 ## **7. Deployment:**
