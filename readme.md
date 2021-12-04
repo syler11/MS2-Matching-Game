@@ -1,7 +1,7 @@
 # Milestone-2 Project / Pair the animals /
 ## Interactive Frontend Develpment Project
 
-![page mockup](/docs/mockup.png)
+![page mockup](/docs/Mockup/mockup.png)
 
 View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 
