@@ -46,6 +46,16 @@ It was also tested on Apple iPad and iPhone 12. All fully functioning and fully 
 ![index.html Accessibility Certificate](/docs/validation/index.html%20accessibility.png)
 ![contact.html Accessibility Certificate](/docs/validation/contact.html%20accessibility.png)
 ![404.html Accessibility Certificate](/docs/validation/404.html%20accessibility.png)
+
+### Chrome Lighthouse Test
+
+1. Opened up my deployed webpage in a new incognito tab in Google Chrome.  
+2. I used CTRL+SHIFT+I key command to prompt the Developer Tool.
+3. I navigated to the Lighthouse menu option (usually the option is not visible but clicking on the  >> sign will reveal it)
+4. I generated a report for the index.html page 
+
+![Google Lighthouse report](/docs\validation\index.html%20Google%20Lighthouse%20Performace.png)
+
 ## **Bugs:**
 
 ## **7. Deployment:**
@@ -56,6 +66,7 @@ Credit to https://favicon.io/favicon-converter/ for the Favicon
 Credit to https://websitemockupgenerator.com/ for the Website mockup picture  
 Credit to https://fontawesome.com/ for the Icona displayed on the website  
 Credit to https://validator.w3.org/ for the html and css validation
+Credit to https://wave.webaim.org/ for accessibility check for the website
 ### Image credits
 https://www.rawpixel.com/ - background.jpg  
 https://www.rawpixel.com/ - question-mark.jpg  
