@@ -19,7 +19,7 @@ a {
     text-decoration: none;
     color: rgb(129, 58, 8);
     font-size: 25px;
-    margin: 2rem;
+    margin: 3rem;
     font-weight: bold;
 }
 
@@ -54,7 +54,11 @@ footer a {
 
 .dropdown-level {
     display: block;
-    margin-left: 5px;
+}
+
+.dropdown-menu {
+    border: none;
+    background-color: transparent;
 }
 
 .help {
@@ -102,6 +106,12 @@ footer a {
 
 @media screen and (max-width: 552px) {
     footer a {
+        margin: 6px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    a {
         margin: 6px;
     }
 }
