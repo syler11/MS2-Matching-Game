@@ -18,3 +18,5 @@ https://www.rawpixel.com/ - kangaroo.png
 https://www.rawpixel.com/ - monkey.png
 https://www.rawpixel.com/ - giraffe.png
 https://www.rawpixel.com/ - frog.png
+
+Credit to https://favicon.io/favicon-converter/ for the Favicon
