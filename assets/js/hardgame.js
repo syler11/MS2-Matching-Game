@@ -7,8 +7,8 @@
     /* In-game Level selector after the game is initiated */
     
     document.getElementById('easyLevel').addEventListener('click', resetHardGame);
-    document.getElementById('medium-game').addEventListener('click', loadHardGame);
-    document.getElementById('hard-game').addEventListener('click', resetHardGame);
+    
+    document.getElementById('hardLevel').addEventListener('click', resetHardGame);
 
 /* Loading the game after selecting the level on the index page */
 function loadHardGame() {

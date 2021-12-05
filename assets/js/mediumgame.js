@@ -3,52 +3,54 @@ const animalCardMedium = animalCards.slice(0,12);
 
 document.getElementById('medium-game').addEventListener('click', loadMediumGame);
 
+document.getElementById('mediumLevel').addEventListener('click', loadMediumGame);
+
 
 /* Loading the game after selecting the level on the index page */
 function loadMediumGame() {
     displayGame();
-    launchGameBoard();
+    launchGameBoardMedium();
     stepsCount.innerHTML = `0`;
     scoreCount.innerHTML = `0`;
     setInterval(setTimer, 800);
 }
 
-var animalCardsSelected = [];
-var animalCardsSelectedId = [];
-var animalCardsCorrect = [];
+var animalCardMediumSelected = [];
+var animalCardMediumSelectedId = [];
+var animalCardMediumCorrect = [];
 
 /* Creating gameboard with showing back of the card */
-function launchGameBoard() {
-    animalCards.sort(() => 0.5 - Math.random());
-    for (let i = 0; i < animalCards.length; i++) {
-        var animalCard = document.createElement('img');
-        animalCard.setAttribute('src', './assets/images/question-mark.png');
-        animalCard.setAttribute('data-id', i);
-        animalCard.setAttribute('alt', 'Card back, select to turn');
-        animalCard.classList.add('col-4', 'col-lg-2', 'animalCard'); /* Use this to resize the gameBoard area */
-        animalCard.addEventListener('click', turnAnimalCard);
-        gameGrid.appendChild(animalCard);
+function launchGameBoardMedium() {
+    animalCardMedium.sort(() => 0.5 - Math.random());
+    for (let i = 0; i < animalCardMedium.length; i++) {
+        var animalCardMed = document.createElement('img');
+        animalCardMed.setAttribute('src', './assets/images/question-mark.png');
+        animalCardMed.setAttribute('data-id', i);
+        animalCardMed.setAttribute('alt', 'Card back, select to turn');
+        animalCardMed.classList.add('col-4', 'col-lg-2', 'animalCard'); /* Use this to resize the gameBoard area */
+        animalCardMed.addEventListener('click', turnAnimalCardMedium);
+        gameGrid.appendChild(animalCardMed);
     }
 }
 
 /* Turns cards by clicking  Credit: Ania Kubow */
-function turnAnimalCard() {
-    var animalCardId = this.getAttribute('data-id');
-    animalCardsSelected.push(animalCardMedium[animalCardId].name);
-    animalCardsSelectedId.push(animalCardId);
-    this.setAttribute('alt', animalCardMedium[animalCardId].name);
-    this.setAttribute('src', animalCardMedium[animalCardId].img);
+function turnAnimalCardMedium() {
+    var animalCardMediumId = this.getAttribute('data-id');
+    animalCardsMediumSelected.push(animalCardMedium[animalCardMediumId].name);
+    animalCardsMediumSelectedId.push(animalCardId);
+    this.setAttribute('alt', animalCardMedium[animalCardMediumId].name);
+    this.setAttribute('src', animalCardMedium[animalCardMediumId].img);
 
-    if (animalCardsSelected.length === 2) {
+    if (animalCardsMediumSelected.length === 2) {
         setTimeout(checkMatch, 300);
-    } else if (animalCardsSelected.length > 2) {
+    } else if (animalCardsMediumSelected.length > 2) {
         this.setAttribute('src', './assets/images/question-mark.png');
     }
     /* Limits card turns to two before it turn back unless they are a match */
-    animalCardsSelected.length = Math.min(animalCardsSelected.length, 2);
+    animalCardsMediumSelected.length = Math.min(animalCardsMediumSelected.length, 2);
 }
 
-function checkMatch() {
+function checkMatchMedium() {
     var animalCardMedium = document.querySelectorAll('img');
     const animalCardFirst = animalCardsSelectedId[0];
     const animalCardSecond = animalCardsSelectedId[1];
@@ -83,7 +85,7 @@ function checkMatch() {
 document.getElementById('reload').addEventListener('click', resetGame);
 document.getElementById('mediumLevel').addEventListener('click', resetGame);
 
-function resetGame() {
+function resetMediumGame() {
     animalCardsSelected = [];
     animalCardsSelectedId = [];
     animalCardsCorrect = [];
