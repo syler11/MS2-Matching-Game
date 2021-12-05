@@ -1,33 +1,4 @@
-/* Hide certain dom elements on page load */
 
-
-    document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('levelSelector').classList.add('no-display');
-    document.getElementById('gameBoard').classList.add('no-display');
-    document.getElementById('gameOutput').classList.add('no-display');
-});
-
-/* Hide and reveal certain dom elemtns once the game level is selected */
-
-function displayGame() {
-    document.getElementById('levelSelector').classList.remove('no-display');
-    document.getElementById('gameBoard').classList.remove('no-display');
-    document.getElementById('gameOutput').classList.remove('no-display');
-    document.getElementById('howto-section').remove();
-    document.getElementById('loadGame').remove();
-}
-
-/* Main page Level selector before the game is initiated */
-
-document.getElementById('easy-game').addEventListener('click', loadEasyGame);
-document.getElementById('medium-game').addEventListener('click', loadEasyGame);
-document.getElementById('hard-game').addEventListener('click', loadEasyGame);
-
-/* In-game Level selector after the game is initiated */
-
-document.getElementById('easyLevel').addEventListener('click', resetGame);
-document.getElementById('medium-game').addEventListener('click', loadEasyGame);
-document.getElementById('hard-game').addEventListener('click', loadEasyGame);
 
 /* Loading the game after selecting the level on the index page */
 function loadEasyGame() {
@@ -35,13 +6,8 @@ function loadEasyGame() {
     launchGameBoard();
     stepsCount.innerHTML = `0`;
     scoreCount.innerHTML = `0`;
-    setInterval(setTimer, 1200);
+    setInterval(setTimer, 800);
 }
-
-/* Global variable declared */
-const gameGrid = document.querySelector('#gameBoard');
-const stepsCount = document.querySelector('#stepsCount');
-const scoreCount = document.querySelector('#scoreCount');
 
 var animalCardsSelected = [];
 var animalCardsSelectedId = [];
@@ -107,37 +73,6 @@ function checkMatch() {
         setTimeout(correctMatch, 200);
     }
 
-}
-
-function correctMatch() {
-    alert('Well done you! Why not to try some of the other levels?');
-    resetGame();
-}
-
-/* Game timer */
-
-var totalSeconds = 0;
-
-function setTimer() {
-    ++totalSeconds;
-    var seconds = document.getElementById('seconds');
-    seconds.innerHTML = pad(totalSeconds % 60);
-    var minutes = document.getElementById('minutes');
-    minutes.innerHTML = pad(parseInt(totalSeconds / 60));
-}
-
-function pad(val) {
-    var valString = val + '';
-    if (valString.length < 2) {
-        return '0' + valString;
-    } else {
-        return valString;
-    }
-}
-
-/* Steps counter */
-function stepsCounter() {
-    stepsCount.innerHTML++;
 }
 
 /* Reloading the game with Reload button or Level seletor */
