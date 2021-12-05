@@ -38,15 +38,7 @@ function gotoContactPage() {
         document.getElementById('gameOutput').classList.add('no-display');
     });
     
-    /* Hide and reveal certain dom elemtns once the game level is selected */
-    
-    function displayGame() {
-        document.getElementById('levelSelector').classList.remove('no-display');
-        document.getElementById('gameBoard').classList.remove('no-display');
-        document.getElementById('gameOutput').classList.remove('no-display');
-        document.getElementById('howto-section').remove();
-        document.getElementById('loadGame').remove();
-    }
+ 
     
 
     /* Global variable declared */

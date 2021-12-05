@@ -1,4 +1,14 @@
-    /* Main page Level selector before the game is initiated */
+      /* Hide and reveal certain dom elemtns once the game level is selected */
+    
+      function displayGame() {
+        document.getElementById('levelSelector').classList.remove('no-display');
+        document.getElementById('gameBoard').classList.remove('no-display');
+        document.getElementById('gameOutput').classList.remove('no-display');
+        document.getElementById('howto-section').remove();
+        document.getElementById('loadGame').remove();
+    }
+
+   /* Main page Level selector before the game is initiated */
     
     document.getElementById('easy-game').addEventListener('click', loadHardGame);
     
@@ -7,7 +17,7 @@
     /* In-game Level selector after the game is initiated */
     
     document.getElementById('easyLevel').addEventListener('click', resetHardGame);
-    
+    document.getElementById('mediumLevel').addEventListener('click', resetMediumGame);
     document.getElementById('hardLevel').addEventListener('click', resetHardGame);
 
 /* Loading the game after selecting the level on the index page */
