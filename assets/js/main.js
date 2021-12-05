@@ -42,7 +42,6 @@ function gotoContactPage() {
     
 
     /* Global variable declared */
-const gameGrid = document.querySelector('#gameBoard');
 const stepsCount = document.querySelector('#stepsCount');
 const scoreCount = document.querySelector('#scoreCount');
 

@@ -5,6 +5,10 @@ const animalCardMedium = animalCards.slice(0, 12);
 /* Button wil initiate the launch of the medium level game */
 document.getElementById('medium-game').addEventListener('click', loadMediumGame);
 
+var animalCardMediumSelected = [];
+var animalCardMediumSelectedId = [];
+var animalCardMediumCorrect = [];
+const gameMediumGrid = document.querySelector('#gameBoard');
 
 /* Loading the game after selecting the level on the index page */
 function loadMediumGame() {
@@ -16,9 +20,6 @@ function loadMediumGame() {
 }
 
 /* Variables for medium level game */
-var animalCardMediumSelected = [];
-var animalCardMediumSelectedId = [];
-var animalCardMediumCorrect = [];
 
 /* Creating gameboard with showing back of the card */
 function launchGameBoardMedium() {
@@ -30,7 +31,7 @@ function launchGameBoardMedium() {
         animalCardMed.setAttribute('alt', 'Card back, select to turn');
         animalCardMed.classList.add('col-4', 'col-lg-2', 'animalCard'); /* Use this to resize the gameBoard area */
         animalCardMed.addEventListener('click', turnAnimalCardMedium);
-        gameGrid.appendChild(animalCardMed);
+        gameMediumGrid.appendChild(animalCardMed);
     }
 }
 
@@ -65,8 +66,8 @@ function checkMatchMedium() {
         animalCardMedium[animalCardMediumSecond].classList.add('match');
     } else {
         stepsCounter();
-        setTimeout(changeCardBack, 600); /* Set time how long the two cards would show to users before they turn back unless they are a match */
-        function changeCardBack() {
+        setTimeout(changeMediumCardBack, 600); /* Set time how long the two cards would show to users before they turn back unless they are a match */
+        function changeMediumCardBack() {
             animalCardMedium[animalCardMediumFirst].setAttribute('src', './assets/images/question-mark.png');
             animalCardMedium[animalCardMediumSecond].setAttribute('src', './assets/images/question-mark.png');
             animalCardMedium[animalCardMediumFirst].setAttribute('alt', 'Card back, select to turn');
@@ -86,14 +87,14 @@ document.getElementById('reload').addEventListener('click', resetMediumGame);
 document.getElementById('mediumLevel').addEventListener('click', resetMediumGame);
 
 function resetMediumGame() {
-    animalCardsSelected = [];
-    animalCardsSelectedId = [];
-    animalCardsCorrect = [];
+    animalCardMediumSelected = [];
+    animalCardMediumSelectedId = [];
+    animalCardMediumCorrect = [];
     cards = document.querySelectorAll('img');
     animalCardMedium.sort(() => 0.5 - Math.random());
     cards.forEach((c) => {
         c.setAttribute('src', './assets/images/question-mark.png');
-        c.addEventListener('click', turnAnimalCard);
+        c.addEventListener('click', turnAnimalCardMedium);
         c.classList.remove('match');
     });
     stepsCount.innerHTML = `0`;

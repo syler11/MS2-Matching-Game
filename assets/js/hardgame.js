@@ -29,6 +29,7 @@ function loadGame() {
 var animalCardsSelected = [];
 var animalCardsSelectedId = [];
 var animalCardsCorrect = [];
+const gameGrid = document.querySelector('#gameBoard');
 
 /* Creating gameboard with showing back of the card */
 function launchGameBoard() {

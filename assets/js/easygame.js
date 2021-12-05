@@ -5,6 +5,11 @@ const animalCardEasy = animalCards.slice(0, 6);
 /* Button wil initiate the launch of the medium level game */
 document.getElementById('easy-game').addEventListener('click', loadEasyGame);
 
+/* Variables for medium level game */
+var animalCardEasySelected = [];
+var animalCardEasySelectedId = [];
+var animalCardEasyCorrect = [];
+const gameEasyGrid = document.querySelector('#gameBoard');
 
 /* Loading the game after selecting the level on the index page */
 function loadEasyGame() {
@@ -15,10 +20,6 @@ function loadEasyGame() {
     setInterval(setTimer, 800);
 }
 
-/* Variables for medium level game */
-var animalCardEasySelected = [];
-var animalCardEasySelectedId = [];
-var animalCardEasyCorrect = [];
 
 /* Creating gameboard with showing back of the card */
 function launchGameBoardEasy() {
@@ -29,8 +30,8 @@ function launchGameBoardEasy() {
         animalCardEazy.setAttribute('data-id', i);
         animalCardEazy.setAttribute('alt', 'Card back, select to turn');
         animalCardEazy.classList.add('col-4', 'col-lg-2', 'animalCard'); /* Use this to resize the gameBoard area */
-        animalCardEazy.addEventListener('click', turnAnimalCardMedium);
-        gameGrid.appendChild(animalCardEazy);
+        animalCardEazy.addEventListener('click', turnAnimalCardEasy);
+        gameEasyGrid.appendChild(animalCardEazy);
     }
 }
 
@@ -65,8 +66,8 @@ function checkMatchMedium() {
         animalCardEasy[animalCardEasySecond].classList.add('match');
     } else {
         stepsCounter();
-        setTimeout(changeCardBack, 600); /* Set time how long the two cards would show to users before they turn back unless they are a match */
-        function changeCardBack() {
+        setTimeout(changeEasyCardBack, 600); /* Set time how long the two cards would show to users before they turn back unless they are a match */
+        function changeEasyCardBack() {
             animalCardEasy[animalCardEasyFirst].setAttribute('src', './assets/images/question-mark.png');
             animalCardEasy[animalCardEasySecond].setAttribute('src', './assets/images/question-mark.png');
             animalCardEasy[animalCardEasyFirst].setAttribute('alt', 'Card back, select to turn');
@@ -83,17 +84,17 @@ function checkMatchMedium() {
 
 /* Reloading the game with Reload button or Level seletor */
 document.getElementById('reload').addEventListener('click', resetEasyGame);
-document.getElementById('easylevel').addEventListener('click', resetEasyGame);
+document.getElementById('easyLevel').addEventListener('click', resetEasyGame);
 
 function resetEasyGame() {
-    animalCardsSelected = [];
-    animalCardsSelectedId = [];
-    animalCardsCorrect = [];
+    animalCardEasySelected = [];
+    animalCardEasySelectedId = [];
+    animalCardEasyCorrect = [];
     cards = document.querySelectorAll('img');
     animalCardEasy.sort(() => 0.5 - Math.random());
     cards.forEach((c) => {
         c.setAttribute('src', './assets/images/question-mark.png');
-        c.addEventListener('click', turnAnimalCard);
+        c.addEventListener('click', turnAnimalCardEasy);
         c.classList.remove('match');
     });
     stepsCount.innerHTML = `0`;
