@@ -117,9 +117,3 @@ function correctMatch() {
     alert('Well done you! Why not to try some of the other levels?');
     resetHardGame();
 }
-/* Resetting timer */
-function resetTimer() {
-    document.getElementById('seconds').innerHTML = `00`;
-    document.getElementById('minutes').innerHTML = `00`;
-    totalSeconds = `0`;
-}

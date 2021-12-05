@@ -71,3 +71,10 @@ function pad(val) {
 function stepsCounter() {
     stepsCount.innerHTML++;
 }
+
+/* Resetting timer */
+function resetTimer() {
+    document.getElementById('seconds').innerHTML = `00`;
+    document.getElementById('minutes').innerHTML = `00`;
+    totalSeconds = `0`;
+}

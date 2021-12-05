@@ -100,9 +100,3 @@ function resetMediumGame() {
     scoreCount.innerHTML = `0`;
     resetTimer();
 }
-/* Resetting timer */
-function resetTimer() {
-    document.getElementById('seconds').innerHTML = `00`;
-    document.getElementById('minutes').innerHTML = `00`;
-    totalSeconds = `0`;
-}
