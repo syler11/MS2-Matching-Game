@@ -15,6 +15,7 @@ function loadMediumGame() {
     setInterval(setTimer, 800);
 }
 
+/* Variables for medium level game */
 var animalCardMediumSelected = [];
 var animalCardMediumSelectedId = [];
 var animalCardMediumCorrect = [];
@@ -78,7 +79,6 @@ function checkMatchMedium() {
     if (animalCardMediumCorrect.length === animalCards.length / 2) {
         setTimeout(correctMatch, 200);
     }
-
 }
 
 /* Reloading the game with Reload button or Level seletor */
