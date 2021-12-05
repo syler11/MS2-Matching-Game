@@ -63,8 +63,12 @@ footer a {
 
 /* contact.html email form styling */
 .form-control {
-    width: 50%;
+    width: 40%;
     margin: auto;
+}
+
+.message-box {
+    height: 70px;
 }
 
 
@@ -100,6 +104,12 @@ footer a {
 
 /* Media queries */
 
+@media screen and (max-width:900px) {
+    .form-control {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 552px) {
     footer a {
         margin: 6px;
@@ -111,3 +121,4 @@ footer a {
         margin: 6px;
     }
 }
+
