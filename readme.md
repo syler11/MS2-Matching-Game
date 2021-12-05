@@ -60,6 +60,42 @@ It was also tested on Apple iPad and iPhone 12. All fully functioning and fully 
 
 ## **7. Deployment:**
 
+### GitHub Pages  
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the GitHub Repository  
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.  
+3. Alternatively Click Here for a GIF demonstrating the process starting from Step 2.
+4. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+5. Under "Source", click the dropdown called "None" and select "Master Branch".
+The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+### Clone a Repository* 
+1. On GitHub, navigate to the main page of the repository.
+2. Above the list of files, click  Code.
+3. To clone the repository using HTTPS, under "Clone with HTTPS", click . To clone the repository using an SSH key,   
+including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click.   
+To clone a repository using GitHub CLI, click Use GitHub CLI, then click.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.  
+6. Type git clone, and then paste the URL you copied earlier.  
+7. Press Enter to create your local clone.
+
+### Browser Preview
+Browser preview was used between commits using the following steps...
+
+1. Open terminal in GitPod. 
+2. With Ctrl+C the cursor was prompt.
+3. python3 -m http.server command line was used to open up a private port.
+4. Once the port 8000 was serving the page was opened by clicking on the Open Browser tab.
+
+### VS Code
+My personal preference is Code. What was used during this project opposed to MS1 when Gitpod was used.
+
+Once I have connected to my Github account all commit were pushed using VS Code.
+
+
 ### Email JS
 1. Create an account at emailjs.com 
 2. In the integration screen in the emailjs dashboard, note your userid
