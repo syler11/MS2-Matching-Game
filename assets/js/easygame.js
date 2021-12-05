@@ -107,13 +107,3 @@ function resetEasyGame() {
     resetTimer();
 }
 
-document.getElementById('easyLevel').addEventListener("click", easySelected)
-
-function easySelected() {
-    window.location.assign("https://syler11.github.io/MS2-Matching-Game/index.html");
-    displayGame();
-    launchGameBoardEasy();
-    stepsCount.innerHTML = `0`;
-    scoreCount.innerHTML = `0`;
-    setInterval(setTimer, 800);
-}
