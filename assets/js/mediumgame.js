@@ -1,26 +1,14 @@
-   /* Hide and reveal certain dom elemtns once the game level is selected */
-    
-   function displayMediumGame() {
-    document.getElementById('levelSelector').classList.remove('no-display');
-    document.getElementById('gameBoard').classList.remove('no-display');
-    document.getElementById('gameOutput').classList.remove('no-display');
-    document.getElementById('howto-section').remove();
-    document.getElementById('loadGame').remove();
-}
 
 /* This statement will make sure only 12 cards will be displayed */
-const animalCardMedium = animalCards.slice(0,12);
+const animalCardMedium = animalCards.slice(0, 12);
 
+/* Button wil initiate the launch of the medium level game */
 document.getElementById('medium-game').addEventListener('click', loadMediumGame);
-
-document.getElementById('mediumLevel').addEventListener('click', loadMediumGame);
-document.getElementById('mediumLevel').addEventListener('click', loadMediumGame);
-document.getElementById('hardLevel').addEventListener('click', loadHardGame);
 
 
 /* Loading the game after selecting the level on the index page */
 function loadMediumGame() {
-    displayMediumGame();
+    displayGame();
     launchGameBoardMedium();
     stepsCount.innerHTML = `0`;
     scoreCount.innerHTML = `0`;
