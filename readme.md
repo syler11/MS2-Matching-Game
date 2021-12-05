@@ -60,6 +60,14 @@ It was also tested on Apple iPad and iPhone 12. All fully functioning and fully 
 
 ## **7. Deployment:**
 
+### Email JS
+1. Create an account at emailjs.com 
+2. In the integration screen in the emailjs dashboard, note your userid
+3. Create a 
+ email service in the Email Services section and note the id
+4. Create a email template in the Email templates section and note the id
+5. Update the script sendEmail.js, method sendMail with your user id, email service id and email template id
+
 ## **8. Credits:**
 ### Media Credits
 Credit to https://favicon.io/favicon-converter/ for the Favicon  
