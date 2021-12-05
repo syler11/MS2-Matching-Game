@@ -23,25 +23,24 @@ const animalCards = [
 ];
 
 /* function added to avoid two a href link on the same page - Credit to www.stackoverflow.com */
-document.getElementById("contactPage").addEventListener("click", gotoContactPage);
-    
+document.getElementById("easyLevel").addEventListener("click", gotoContactPage);
+
 function gotoContactPage() {
-       window.location.assign("https://syler11.github.io/MS2-Matching-Game/contact.html");
-    }
+    window.location.assign("https://syler11.github.io/MS2-Matching-Game/contact.html");
 
-    /* Hide certain dom elements on page load */
+}
+
+/* Hide certain dom elements on page load */
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('levelSelector').classList.add('no-display');
+    document.getElementById('gameBoard').classList.add('no-display');
+    document.getElementById('gameOutput').classList.add('no-display');
+});
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('levelSelector').classList.add('no-display');
-        document.getElementById('gameBoard').classList.add('no-display');
-        document.getElementById('gameOutput').classList.add('no-display');
-    });
-    
- 
-    
 
-    /* Global variable declared */
+
+/* Global variable declared */
 const stepsCount = document.querySelector('#stepsCount');
 const scoreCount = document.querySelector('#scoreCount');
 

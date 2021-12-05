@@ -53,33 +53,38 @@ function turnAnimalCardMedium() {
 }
 
 function checkMatchMedium() {
-    var animalCardMedium = document.querySelectorAll('img');
+    var animalCardMediumImg = document.querySelectorAll('img');
     const animalCardMediumFirst = animalCardMediumSelectedId[0];
     const animalCardMediumSecond = animalCardMediumSelectedId[1];
 
     if (animalCardMediumSelected[0] === animalCardMediumSelected[1] && animalCardMediumFirst !== animalCardMediumSecond) {
         animalCardMediumCorrect.push(animalCardMediumSelected);
         stepsCounter();
-        animalCardMedium[animalCardMediumFirst].removeEventListener("click", turnAnimalCardMedium);
-        animalCardMedium[animalCardMediumSecond].removeEventListener("click", turnAnimalCardMedium);
-        animalCardMedium[animalCardMediumFirst].classList.add('match');
-        animalCardMedium[animalCardMediumSecond].classList.add('match');
+        animalCardMediumImg[animalCardMediumFirst].removeEventListener("click", turnAnimalCardMedium);
+        animalCardMediumImg[animalCardMediumSecond].removeEventListener("click", turnAnimalCardMedium);
+        animalCardMediumImg[animalCardMediumFirst].classList.add('match');
+        animalCardMediumImg[animalCardMediumSecond].classList.add('match');
     } else {
         stepsCounter();
         setTimeout(changeMediumCardBack, 600); /* Set time how long the two cards would show to users before they turn back unless they are a match */
         function changeMediumCardBack() {
-            animalCardMedium[animalCardMediumFirst].setAttribute('src', './assets/images/question-mark.png');
-            animalCardMedium[animalCardMediumSecond].setAttribute('src', './assets/images/question-mark.png');
-            animalCardMedium[animalCardMediumFirst].setAttribute('alt', 'Card back, select to turn');
-            animalCardMedium[animalCardMediumSecond].setAttribute('alt', 'Card back, select to turn');
+            animalCardMediumImg[animalCardMediumFirst].setAttribute('src', './assets/images/question-mark.png');
+            animalCardMediumImg[animalCardMediumSecond].setAttribute('src', './assets/images/question-mark.png');
+            animalCardMediumImg[animalCardMediumFirst].setAttribute('alt', 'Card back, select to turn');
+            animalCardMediumImg[animalCardMediumSecond].setAttribute('alt', 'Card back, select to turn');
         };
     }
     animalCardMediumSelected = [];
     animalCardMediumSelectedId = [];
     scoreCount.textContent = animalCardMediumCorrect.length;
-    if (animalCardMediumCorrect.length === animalCards.length / 2) {
-        setTimeout(correctMatch, 200);
+    if (animalCardMediumCorrect.length === animalCardMedium.length / 2) {
+        setTimeout(correctMatchMedium, 200);
     }
+}
+
+function correctMatchMedium() {
+    alert('Well done you! Why not to try some of the other levels?');
+    resetMediumGame();
 }
 
 /* Reloading the game with Reload button or Level seletor */

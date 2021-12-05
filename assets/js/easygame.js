@@ -77,14 +77,19 @@ function checkMatchEasy() {
     animalCardEasySelected = [];
     animalCardEasySelectedId = [];
     scoreCount.textContent = animalCardEasyCorrect.length;
-    if (animalCardEasyCorrect.length === animalCards.length / 2) {
-        setTimeout(correctMatch, 200);
+    if (animalCardEasyCorrect.length === animalCardEasy.length / 2) {
+        setTimeout(correctMatchEasy, 200);
     }
+}
+
+function correctMatchEasy() {
+    alert('Well done you! Why not to try some of the other levels?');
+    resetEasyGame();
 }
 
 /* Reloading the game with Reload button or Level seletor */
 document.getElementById('reload').addEventListener('click', resetEasyGame);
-document.getElementById('easyLevel').addEventListener('click', resetEasyGame);
+
 
 function resetEasyGame() {
     animalCardEasySelected = [];
@@ -100,4 +105,15 @@ function resetEasyGame() {
     stepsCount.innerHTML = `0`;
     scoreCount.innerHTML = `0`;
     resetTimer();
+}
+
+document.getElementById('easyLevel').addEventListener("click", easySelected)
+
+function easySelected() {
+    window.location.assign("https://syler11.github.io/MS2-Matching-Game/index.html");
+    displayGame();
+    launchGameBoardEasy();
+    stepsCount.innerHTML = `0`;
+    scoreCount.innerHTML = `0`;
+    setInterval(setTimer, 800);
 }
