@@ -1,3 +1,6 @@
+//To keep the code relatively short Arrays, Global variables and functions were moved to main.js leaving a much tidier code for game function. 
+
+
 /* Animal card array */
 
 const animalCards = [
@@ -22,7 +25,7 @@ const animalCards = [
 
 ];
 
-/* function added to avoid two a href link on the same page - Credit to www.stackoverflow.com */
+/* Function added to avoid two a href link on the same page - Credit to www.stackoverflow.com */
 document.getElementById("easyLevel").addEventListener("click", gotoContactPage);
 
 function gotoContactPage() {

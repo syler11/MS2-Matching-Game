@@ -89,7 +89,6 @@ function correctMatchMedium() {
 
 /* Reloading the game with Reload button or Level seletor */
 document.getElementById('reload').addEventListener('click', resetMediumGame);
-document.getElementById('mediumLevel').addEventListener('click', resetMediumGame);
 
 function resetMediumGame() {
     animalCardMediumSelected = [];
