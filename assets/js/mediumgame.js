@@ -36,54 +36,54 @@ function launchGameBoardMedium() {
 /* Turns cards by clicking  Credit: Ania Kubow */
 function turnAnimalCardMedium() {
     var animalCardMediumId = this.getAttribute('data-id');
-    animalCardsMediumSelected.push(animalCardMedium[animalCardMediumId].name);
-    animalCardsMediumSelectedId.push(animalCardId);
+    animalCardMediumSelected.push(animalCardMedium[animalCardMediumId].name);
+    animalCardMediumSelectedId.push(animalCardMediumId);
     this.setAttribute('alt', animalCardMedium[animalCardMediumId].name);
     this.setAttribute('src', animalCardMedium[animalCardMediumId].img);
 
-    if (animalCardsMediumSelected.length === 2) {
+    if (animalCardMediumSelected.length === 2) {
         setTimeout(checkMatch, 300);
-    } else if (animalCardsMediumSelected.length > 2) {
+    } else if (animalCardMediumSelected.length > 2) {
         this.setAttribute('src', './assets/images/question-mark.png');
     }
     /* Limits card turns to two before it turn back unless they are a match */
-    animalCardsMediumSelected.length = Math.min(animalCardsMediumSelected.length, 2);
+    animalCardMediumSelected.length = Math.min(animalCardMediumSelected.length, 2);
 }
 
 function checkMatchMedium() {
     var animalCardMedium = document.querySelectorAll('img');
-    const animalCardFirst = animalCardsSelectedId[0];
-    const animalCardSecond = animalCardsSelectedId[1];
+    const animalCardMediumFirst = animalCardMediumSelectedId[0];
+    const animalCardMediumSecond = animalCardMediumSelectedId[1];
 
-    if (animalCardsSelected[0] === animalCardsSelected[1] && animalCardFirst !== animalCardSecond) {
-        animalCardsCorrect.push(animalCardsSelected);
+    if (animalCardMediumSelected[0] === animalCardMediumSelected[1] && animalCardMediumFirst !== animalCardMediumSecond) {
+        animalCardMediumCorrect.push(animalCardMediumSelected);
         stepsCounter();
-        animalCardMedium[animalCardFirst].removeEventListener("click", turnAnimalCard);
-        animalCardMedium[animalCardSecond].removeEventListener("click", turnAnimalCard);
-        animalCardMedium[animalCardFirst].classList.add('match');
-        animalCardMedium[animalCardSecond].classList.add('match');
+        animalCardMedium[animalCardMediumFirst].removeEventListener("click", turnAnimalCard);
+        animalCardMedium[animalCardMediumSecond].removeEventListener("click", turnAnimalCard);
+        animalCardMedium[animalCardMediumFirst].classList.add('match');
+        animalCardMedium[animalCardMediumSecond].classList.add('match');
     } else {
         stepsCounter();
         setTimeout(changeCardBack, 600); /* Set time how long the two cards would show to users before they turn back unless they are a match */
         function changeCardBack() {
-            animalCardMedium[animalCardFirst].setAttribute('src', './assets/images/question-mark.png');
-            animalCardMedium[animalCardSecond].setAttribute('src', './assets/images/question-mark.png');
-            animalCardMedium[animalCardFirst].setAttribute('alt', 'Card back, select to turn');
-            animalCardMedium[animalCardSecond].setAttribute('alt', 'Card back, select to turn');
+            animalCardMedium[animalCardMediumFirst].setAttribute('src', './assets/images/question-mark.png');
+            animalCardMedium[animalCardMediumSecond].setAttribute('src', './assets/images/question-mark.png');
+            animalCardMedium[animalCardMediumFirst].setAttribute('alt', 'Card back, select to turn');
+            animalCardMedium[animalCardMediumSecond].setAttribute('alt', 'Card back, select to turn');
         };
     }
-    animalCardsSelected = [];
-    animalCardsSelectedId = [];
-    scoreCount.textContent = animalCardsCorrect.length;
-    if (animalCardsCorrect.length === animalCards.length / 2) {
+    animalCardMediumSelected = [];
+    animalCardMediumSelectedId = [];
+    scoreCount.textContent = animalCardMediumCorrect.length;
+    if (animalCardMediumCorrect.length === animalCards.length / 2) {
         setTimeout(correctMatch, 200);
     }
 
 }
 
 /* Reloading the game with Reload button or Level seletor */
-document.getElementById('reload').addEventListener('click', resetGame);
-document.getElementById('mediumLevel').addEventListener('click', resetGame);
+document.getElementById('reload').addEventListener('click', resetMediumGame);
+document.getElementById('mediumLevel').addEventListener('click', resetMediumGame);
 
 function resetMediumGame() {
     animalCardsSelected = [];
