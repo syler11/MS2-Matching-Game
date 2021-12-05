@@ -1,7 +1,11 @@
+/* This statement will make sure only 12 cards will be displayed */
+const animalCardMedium = animalCards.slice(0,12);
+
+document.getElementById('medium-game').addEventListener('click', loadMediumGame);
 
 
 /* Loading the game after selecting the level on the index page */
-function loadEasyGame() {
+function loadMediumGame() {
     displayGame();
     launchGameBoard();
     stepsCount.innerHTML = `0`;
@@ -30,10 +34,10 @@ function launchGameBoard() {
 /* Turns cards by clicking  Credit: Ania Kubow */
 function turnAnimalCard() {
     var animalCardId = this.getAttribute('data-id');
-    animalCardsSelected.push(animalCards[animalCardId].name);
+    animalCardsSelected.push(animalCardMedium[animalCardId].name);
     animalCardsSelectedId.push(animalCardId);
-    this.setAttribute('alt', animalCards[animalCardId].name);
-    this.setAttribute('src', animalCards[animalCardId].img);
+    this.setAttribute('alt', animalCardMedium[animalCardId].name);
+    this.setAttribute('src', animalCardMedium[animalCardId].img);
 
     if (animalCardsSelected.length === 2) {
         setTimeout(checkMatch, 300);
@@ -45,25 +49,25 @@ function turnAnimalCard() {
 }
 
 function checkMatch() {
-    var animalCards = document.querySelectorAll('img');
+    var animalCardMedium = document.querySelectorAll('img');
     const animalCardFirst = animalCardsSelectedId[0];
     const animalCardSecond = animalCardsSelectedId[1];
 
     if (animalCardsSelected[0] === animalCardsSelected[1] && animalCardFirst !== animalCardSecond) {
         animalCardsCorrect.push(animalCardsSelected);
         stepsCounter();
-        animalCards[animalCardFirst].removeEventListener("click", turnAnimalCard);
-        animalCards[animalCardSecond].removeEventListener("click", turnAnimalCard);
-        animalCards[animalCardFirst].classList.add('match');
-        animalCards[animalCardSecond].classList.add('match');
+        animalCardMedium[animalCardFirst].removeEventListener("click", turnAnimalCard);
+        animalCardMedium[animalCardSecond].removeEventListener("click", turnAnimalCard);
+        animalCardMedium[animalCardFirst].classList.add('match');
+        animalCardMedium[animalCardSecond].classList.add('match');
     } else {
         stepsCounter();
         setTimeout(changeCardBack, 600); /* Set time how long the two cards would show to users before they turn back unless they are a match */
         function changeCardBack() {
-            animalCards[animalCardFirst].setAttribute('src', './assets/images/question-mark.png');
-            animalCards[animalCardSecond].setAttribute('src', './assets/images/question-mark.png');
-            animalCards[animalCardFirst].setAttribute('alt', 'Card back, select to turn');
-            animalCards[animalCardSecond].setAttribute('alt', 'Card back, select to turn');
+            animalCardMedium[animalCardFirst].setAttribute('src', './assets/images/question-mark.png');
+            animalCardMedium[animalCardSecond].setAttribute('src', './assets/images/question-mark.png');
+            animalCardMedium[animalCardFirst].setAttribute('alt', 'Card back, select to turn');
+            animalCardMedium[animalCardSecond].setAttribute('alt', 'Card back, select to turn');
         };
     }
     animalCardsSelected = [];
@@ -77,14 +81,14 @@ function checkMatch() {
 
 /* Reloading the game with Reload button or Level seletor */
 document.getElementById('reload').addEventListener('click', resetGame);
-document.getElementById('easyLevel').addEventListener('click', resetGame);
+document.getElementById('mediumLevel').addEventListener('click', resetGame);
 
 function resetGame() {
     animalCardsSelected = [];
     animalCardsSelectedId = [];
     animalCardsCorrect = [];
     cards = document.querySelectorAll('img');
-    animalCards.sort(() => 0.5 - Math.random());
+    animalCardMedium.sort(() => 0.5 - Math.random());
     cards.forEach((c) => {
         c.setAttribute('src', './assets/images/question-mark.png');
         c.addEventListener('click', turnAnimalCard);

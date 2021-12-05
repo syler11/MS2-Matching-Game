@@ -1,7 +1,17 @@
-
+    /* Main page Level selector before the game is initiated */
+    
+    document.getElementById('easy-game').addEventListener('click', loadHardGame);
+    
+    document.getElementById('hard-game').addEventListener('click', loadHardGame);
+    
+    /* In-game Level selector after the game is initiated */
+    
+    document.getElementById('easyLevel').addEventListener('click', resetHardGame);
+    document.getElementById('medium-game').addEventListener('click', loadHardGame);
+    document.getElementById('hard-game').addEventListener('click', resetHardGame);
 
 /* Loading the game after selecting the level on the index page */
-function loadEasyGame() {
+function loadHardGame() {
     displayGame();
     launchGameBoard();
     stepsCount.innerHTML = `0`;
@@ -76,10 +86,10 @@ function checkMatch() {
 }
 
 /* Reloading the game with Reload button or Level seletor */
-document.getElementById('reload').addEventListener('click', resetGame);
-document.getElementById('easyLevel').addEventListener('click', resetGame);
+document.getElementById('reload').addEventListener('click', resetHardGame);
+document.getElementById('hardLevel').addEventListener('click', resetHardGame);
 
-function resetGame() {
+function resetHardGame() {
     animalCardsSelected = [];
     animalCardsSelectedId = [];
     animalCardsCorrect = [];
@@ -93,6 +103,12 @@ function resetGame() {
     stepsCount.innerHTML = `0`;
     scoreCount.innerHTML = `0`;
     resetTimer();
+}
+
+/* Display message to users when all cards has been revealed */
+function correctMatch() {
+    alert('Well done you! Why not to try some of the other levels?');
+    resetHardGame();
 }
 /* Resetting timer */
 function resetTimer() {

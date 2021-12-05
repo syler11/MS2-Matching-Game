@@ -48,17 +48,6 @@ function gotoContactPage() {
         document.getElementById('loadGame').remove();
     }
     
-    /* Main page Level selector before the game is initiated */
-    
-    document.getElementById('easy-game').addEventListener('click', loadEasyGame);
-    document.getElementById('medium-game').addEventListener('click', loadEasyGame);
-    document.getElementById('hard-game').addEventListener('click', loadEasyGame);
-    
-    /* In-game Level selector after the game is initiated */
-    
-    document.getElementById('easyLevel').addEventListener('click', resetGame);
-    document.getElementById('medium-game').addEventListener('click', loadEasyGame);
-    document.getElementById('hard-game').addEventListener('click', loadEasyGame);
 
     /* Global variable declared */
 const gameGrid = document.querySelector('#gameBoard');
@@ -89,9 +78,4 @@ function pad(val) {
 /* Steps counter */
 function stepsCounter() {
     stepsCount.innerHTML++;
-}
-
-function correctMatch() {
-    alert('Well done you! Why not to try some of the other levels?');
-    resetGame();
 }
