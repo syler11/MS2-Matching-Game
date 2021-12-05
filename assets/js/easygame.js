@@ -44,7 +44,7 @@ function turnAnimalCardEasy() {
     this.setAttribute('src', animalCardEasy[animalCardEasyId].img);
 
     if (animalCardEasySelected.length === 2) {
-        setTimeout(checkMatch, 300);
+        setTimeout(checkMatchEasy, 300);
     } else if (animalCardEasySelected.length > 2) {
         this.setAttribute('src', './assets/images/question-mark.png');
     }
@@ -52,7 +52,7 @@ function turnAnimalCardEasy() {
     animalCardEasySelected.length = Math.min(animalCardEasySelected.length, 2);
 }
 
-function checkMatchMedium() {
+function checkMatchEasy() {
     var animalCardEasy = document.querySelectorAll('img');
     const animalCardEasyFirst = animalCardEasySelectedId[0];
     const animalCardEasySecond = animalCardEasySelectedId[1];
@@ -60,8 +60,8 @@ function checkMatchMedium() {
     if (animalCardEasySelected[0] === animalCardEasySelected[1] && animalCardEasyFirst !== animalCardEasySecond) {
         animalCardEasyCorrect.push(animalCardEasySelected);
         stepsCounter();
-        animalCardEasy[animalCardEasyFirst].removeEventListener("click", turnAnimalCard);
-        animalCardEasy[animalCardEasySecond].removeEventListener("click", turnAnimalCard);
+        animalCardEasy[animalCardEasyFirst].removeEventListener("click", turnAnimalCardEasy);
+        animalCardEasy[animalCardEasySecond].removeEventListener("click", turnAnimalCardEasy);
         animalCardEasy[animalCardEasyFirst].classList.add('match');
         animalCardEasy[animalCardEasySecond].classList.add('match');
     } else {

@@ -44,7 +44,7 @@ function turnAnimalCardMedium() {
     this.setAttribute('src', animalCardMedium[animalCardMediumId].img);
 
     if (animalCardMediumSelected.length === 2) {
-        setTimeout(checkMatch, 300);
+        setTimeout(checkMatchMedium, 300);
     } else if (animalCardMediumSelected.length > 2) {
         this.setAttribute('src', './assets/images/question-mark.png');
     }
@@ -60,8 +60,8 @@ function checkMatchMedium() {
     if (animalCardMediumSelected[0] === animalCardMediumSelected[1] && animalCardMediumFirst !== animalCardMediumSecond) {
         animalCardMediumCorrect.push(animalCardMediumSelected);
         stepsCounter();
-        animalCardMedium[animalCardMediumFirst].removeEventListener("click", turnAnimalCard);
-        animalCardMedium[animalCardMediumSecond].removeEventListener("click", turnAnimalCard);
+        animalCardMedium[animalCardMediumFirst].removeEventListener("click", turnAnimalCardMedium);
+        animalCardMedium[animalCardMediumSecond].removeEventListener("click", turnAnimalCardMedium);
         animalCardMedium[animalCardMediumFirst].classList.add('match');
         animalCardMedium[animalCardMediumSecond].classList.add('match');
     } else {
