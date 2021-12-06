@@ -72,6 +72,16 @@ Future improvements:
 * Website to challenger users against each other time as per their age. 
 * Audio animation when cards a clicked and matched and game completed. 
 
+### Design
+The goal of the design was to create a visually appealing game which attractive for younger kids. 
+
+#### Colours:
+
+#### Fonts:
+
+#### Imagery:
+
+HAving small kids myself (4yrs, 8 yrs)I have taken their opining on board when selecting the design to make sure they would be happy to play the game. 
 
 ## **3. Features**
 ## **4. Technologies used:**
@@ -184,5 +194,7 @@ https://www.rawpixel.com/ - frog.png
 
 ### Acknowledgment
 
+I would like to thank my kids who provided me feedback during the projects to make sure they would have fun while they play. They had. :)
+I would like to thank my wife to put up with me when I basically disappeared for a week to finish the project on time after the tight time frame between my course reactivation and MS2 assessment deadline. 
 I would like to thank you to my mentor Mo Shami for the guidance. 
 
