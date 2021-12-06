@@ -113,6 +113,20 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 
 ![feature 4](/docs/features/feature4.png)
 
+#### Game Board
+* Contains the in-game level selector.
+* Contains the timer to measure completion time
+* Contains the playing cards as per the level the user selected. 6 cards for easy, 12 cards for medium and 18 cards for hard level.
+* Contains a reload button what resets the selected game.
+* Contains a Need Help button what navigates to the contact.html page. See further below. 
+
+![feature 5](/docs/features/feature5.png)
+
+#### Game result feedback
+* Contains feedback to the user once the game was selected.
+
+![feature 6](/docs/features/feature6.png)
+
 ### Contact page (contact.html)
 
 1. Header - contains the navigation bar, main title 
