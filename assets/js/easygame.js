@@ -89,6 +89,12 @@ function correctMatchEasy() {
 
 /* Reloading the game with Reload button or Level seletor */
 document.getElementById('reload').addEventListener('click', resetEasyGame);
+document.getElementById('hardLevel').addEventListener('click', resetHardGame);
+document.getElementById('mediumLevel').addEventListener('click', resetMediumGame);
+document.getElementById('easyLevel').addEventListener('click', loadEasyGame);
+
+
+
 
 
 function resetEasyGame() {

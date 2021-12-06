@@ -16,6 +16,23 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 7. [Deployment](#deployment)
 8. [Credits](#credits)
 
+
+## **1. Project Goals**
+
+### Website owner goals
+* Create an easy game what can be played for kids
+* The goal is too create an intuitive game what can be understand even without able to read the rules
+* To engage users to send feedback for future development
+
+### User goals
+* Enjoy the game while playing
+* To try all levels
+* Learn the rules before the game (age permitted)
+* Receive interactive feedback from the game
+
+## **2. UX - User Experience**
+
+## **3. Features**
 ## **4. Technologies used:**
 The following languages and framework were used to create this project.  
 * HTML5 – provided the main structure of the website.
@@ -56,7 +73,7 @@ It was also tested on Apple iPad and iPhone 12. All fully functioning and fully 
 
 ![Google Lighthouse report](/docs\validation\index.html%20Google%20Lighthouse%20Performace.png)
 
-## **Bugs:**
+## **6. Bugs:**
 
 ## **7. Deployment:**
 

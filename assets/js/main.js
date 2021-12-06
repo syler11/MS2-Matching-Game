@@ -26,7 +26,7 @@ const animalCards = [
 ];
 
 /* Function added to avoid two a href link on the same page - Credit to www.stackoverflow.com */
-document.getElementById("easyLevel").addEventListener("click", gotoContactPage);
+document.getElementById("contactPage").addEventListener("click", gotoContactPage);
 
 function gotoContactPage() {
     window.location.assign("https://syler11.github.io/MS2-Matching-Game/contact.html");
