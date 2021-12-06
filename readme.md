@@ -32,6 +32,26 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 
 ## **2. UX - User Experience**
 
+### User stories
+
+#### First-time users
+1. As first-time user, I want to play and enjoy the game.
+2. As first-time user, I want to understand the objective of the game.
+3. As first-time user, I want to try all different level.
+4. As first-time user, I want to able to play on any devices reagrdless the screen size. 
+5. As first-time user, I want to see able to follow my progress with steps and score count. 
+6. As first-time user, I want to see how long does it take to complete the game. 
+7. As first-time user, I want to navigate the website easily. 
+
+##### Regular visitor
+1. As a regular visitor, I want to mesaure my time to see my progress.
+2. As a regular visitor, I want to select different level to challenge myself.
+3. As a regular visitor, I want to send feedback of the game. 
+
+#### Site owner
+1. As a site owner, I want to receive feedback from the users easily. 
+
+
 ## **3. Features**
 ## **4. Technologies used:**
 The following languages and framework were used to create this project.  
