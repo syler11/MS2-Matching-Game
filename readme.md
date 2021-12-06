@@ -123,11 +123,17 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 ![feature 5](/docs/features/feature5.png)
 
 #### Game result feedback
-* Contains feedback to the user once the game was selected.
+* Contains the game result to the user and also some teasing to try another Levels. 
 
 ![feature 6](/docs/features/feature6.png)
 
 ### Contact page (contact.html)
+* Contains the email form what needs to be completed and submitted to send feedback to the website owner.  
+Validation is added to the input fields so empty message cannot be sent without valid Name, Email address and Message fields. 
+
+![feature 7](/docs/features/feature7.png)
+
+### 404 Page (404.html)
 
 1. Header - contains the navigation bar, main title 
 ## **4. Technologies used:**
