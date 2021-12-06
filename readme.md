@@ -190,14 +190,16 @@ My kids aged 4 and 8 were appropiate testing subjects and both of them managed t
 ![Google Lighthouse report](/docs\validation\index.html%20Google%20Lighthouse%20Performace.png)
 
 ### JS Hint Validation
-#### Main Js
+#### Main Js Validation
 ![main.js Validation](/docs/validation/main.js-validation.png) 
 
-#### Easygame.js
+#### Easygame.js Validation 
 ![easygame.js Validation](/docs/validation/easygame.js-validation.png) 
-#### Mediumgame.js
-![easygame.js Validation](/docs/validation/mediumgame.js-validation.png) 
+#### Mediumgame.js Validation
+![mediumgame.js Validation](/docs/validation/mediumgame.js-validation.png) 
 
+#### Hardgame.js Validation
+![hardgame.js Validation](/docs/validation/hardgame.js-validation.png) 
 
 ## **6. Bugs:**
 
