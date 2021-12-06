@@ -2,10 +2,10 @@
 /* This statement will make sure only 6 cards will be displayed */
 const animalCardEasy = animalCards.slice(0, 6);
 
-/* Button wil initiate the launch of the medium level game */
+/* Button wil initiate the launch of the easy level game */
 document.getElementById('easy-game').addEventListener('click', loadEasyGame);
 
-/* Variables for medium level game */
+/* Variables for easy level game */
 var animalCardEasySelected = [];
 var animalCardEasySelectedId = [];
 var animalCardEasyCorrect = [];
@@ -66,7 +66,7 @@ function checkMatchEasy() {
         animalCardEasy[animalCardEasySecond].classList.add('match');
     } else {
         stepsCounter();
-        setTimeout(changeEasyCardBack, 600); /* Set time how long the two cards would show to users before they turn back unless they are a match */
+        setTimeout(changeEasyCardBack, 400); /* Set time how long the two cards would show to users before they turn back unless they are a match */
         function changeEasyCardBack() {
             animalCardEasy[animalCardEasyFirst].setAttribute('src', './assets/images/question-mark.png');
             animalCardEasy[animalCardEasySecond].setAttribute('src', './assets/images/question-mark.png');

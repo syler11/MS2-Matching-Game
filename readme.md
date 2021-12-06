@@ -191,9 +191,13 @@ My kids aged 4 and 8 were appropiate testing subjects and both of them managed t
 
 ### JS Hint
 ![main.js Validation](/docs/validation/main.js-validation.png) 
+![easygame.js Validation](/docs/validation/easygame.js-validation.png) 
 
 
 ## **6. Bugs:**
+
+Animal cards didn't display all 6 cards in a lime but pushed one card below. 
+Solution: once class="row" was applied to the div all 6 cards displayed in a row.
 
 ## **7. Deployment:**
 
