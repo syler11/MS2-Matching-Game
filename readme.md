@@ -150,7 +150,8 @@ Validation is added to the input fields so empty message cannot be sent without 
 The following languages and framework were used to create this project.  
 * HTML5 – provided the main structure of the website.
 * CSS3 – provided the styling of the website and the overall content.
-* Javascript - Vanilla Jac
+* Javascript - Vanilla Javascript was used throughout the whole project
+* Email.js provided the framework for the email function 
 * Bootstrap 5.0.0 – provided the responsive structure and some other component such as responsive layout, dropdown menu, and form. 
 * Balsamiq - development tool was used to create the wireframe for the website. 
 * VS Code - VS Code was used for version control to commit and Push to GitHub.
@@ -222,7 +223,6 @@ Browser preview was used between commits using the following steps...
 
 ### VS Code
 My personal preference is Code. What was used during this project opposed to MS1 when Gitpod was used.
-
 Once I have connected to my Github account all commit were pushed using VS Code.
 
 
@@ -236,14 +236,20 @@ Once I have connected to my Github account all commit were pushed using VS Code.
 
 ## **8. Credits:**
 ### Media Credits
+Credit to https://codeinstitute.net/ for the lesson on email.js
 Credit to https://favicon.io/favicon-converter/ for the Favicon  
 Credit to https://websitemockupgenerator.com/ for the Website mockup picture  
 Credit to https://fontawesome.com/ for the Icona displayed on the website  
 Credit to https://validator.w3.org/ for the html and css validation
 Credit to https://wave.webaim.org/ for accessibility check for the website
+Credit to https://www.emailjs.com/ for email sending functionality for the website 
+Credit to https://www.google.com/ for the Lighthouse report
+Credit to https://stackoverflow.com/ for being a valuabe source for various function
+Credit to https://www.youtube.com/watch?v=tjyDOHzKN0w for Ania Kubow for the base of the card game
+Credit to https://www.youtube.com/watch?v=dtKciwk_si4 for Florin Pop for various function (Step & Score count among many other things)
 ### Image credits
 https://www.rawpixel.com/ - background.jpg  
-https://www.rawpixel.com/ - question-mark.jpg  
+https://www.rawpixel.com/ - question-mark.png  
 https://www.rawpixel.com/nunny - dog.png  
 https://www.rawpixel.com/nunny - cat.png  
 https://www.rawpixel.com/ - turtle.png  
@@ -253,6 +259,8 @@ https://www.rawpixel.com/ - kangaroo.png
 https://www.rawpixel.com/ - monkey.png  
 https://www.rawpixel.com/ - giraffe.png  
 https://www.rawpixel.com/ - frog.png  
+https://www.rawpixel.com/ - monkey.png  
+
 
 ### Acknowledgment
 
