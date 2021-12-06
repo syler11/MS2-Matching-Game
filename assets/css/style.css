@@ -61,6 +61,7 @@ footer a {
     background-color: transparent;
 }
 
+
 /* contact.html email form styling */
 .form-control {
     width: 40%;
@@ -100,6 +101,7 @@ footer a {
 
 .timer {
     margin-right: 1rem;
+    background-color: rgb(129, 58, 8);
 }
 
 /* Media queries */
