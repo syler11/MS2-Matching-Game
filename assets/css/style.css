@@ -107,18 +107,20 @@ footer a {
 
 /* Media queries */
 
+/* Email from fields are sized up for smaller screen sizes by 10% so it looks better on the screen. */
 @media screen and (max-width:900px) {
     .form-control {
         width: 50%;
     }
 }
-
+ /* Social Media Icons stying in the same row */
 @media screen and (max-width: 552px) {
     footer a {
         margin: 6px;
     }
 }
 
+ /* Main Nav stying in the same row */
 @media screen and (max-width: 440px) {
     a {
         margin: 6px;

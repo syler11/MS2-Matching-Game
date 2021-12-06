@@ -203,8 +203,27 @@ My kids aged 4 and 8 were appropiate testing subjects and both of them managed t
 
 ## **6. Bugs:**
 
-Animal cards didn't display all 6 cards in a lime but pushed one card below. 
+* Animal cards didn't display all 6 cards in a lime but pushed one card below.  
 Solution: once class="row" was applied to the div all 6 cards displayed in a row.
+
+* The social icons and Main Nav werent displaying correctly especially at smaller screen sizes.
+Solution: Media queries were applied to adjust sizing and margin to fit everything in the same row.
+
+The original question mark card didn't look good with the rest of the page design so I changed halfway through the project. 
+
+Font color for nav and Level Selector was changed as it didn't pass the Accessibility contrast test. 
+
+Javascript was used index.html page at the Need Help button to makes sure < ahref wouldn't used as a redundant link.
+
+Towards the second half of the project the main.js was becoming too big so the file was separated into few smaller files what handles the game functionalities. (easygame.js, mdeiumgame.js and hardgame.js)
+
+User was able to open 3 cards so Math.min was used to only allow two cards at the time. 
+
+JS Hint flagged up a redundant semi colon at validation so it was removed in easygame.js / mediumgame.js and hardgame.js
+
+After duplicating the the hardgame.js to create mediumgame.js and easygame.js there were lot of issues by the time all name changes were added correctly so the game would function properly. 
+
+
 
 
 
@@ -285,5 +304,5 @@ https://www.rawpixel.com/ - monkey.png
 
 I would like to thank my kids who provided me feedback during the projects to make sure they would have fun while they play. They had. :)  
 I would like to thank my wife to put up with me when I basically disappeared for a week to finish the project on time after the tight time frame between my course reactivation and MS2 assessment deadline.   
-I would like to thank you to my mentor Mo Shami for the guidance. 
+I would like to thank my mentor Mo Shami for the guidance. 
 
