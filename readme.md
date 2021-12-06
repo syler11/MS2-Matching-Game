@@ -91,7 +91,17 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 
 ## **3. Features**
 
+### Home page (index.html)
+#### Header:
+* Contains the navigation bar 
+* Main title
+* Description of the website
 
+
+
+### Contacy page (contact.html)
+
+1. Header - contains the navigation bar, main title 
 ## **4. Technologies used:**
 The following languages and framework were used to create this project.  
 * HTML5 – provided the main structure of the website.
