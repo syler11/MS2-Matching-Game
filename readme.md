@@ -92,7 +92,7 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 ## **3. Features**
 
 ### Home page (index.html)
-#### Header:
+#### Header
 * Contains the navigation bar 
 * Main title
 * Description of the website
@@ -107,6 +107,11 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 * Contains the Level Selector what will launch the games by clicking either on the Easy, Medium or Hard level.
 
 ![feature 3](/docs/features/feature3.png)
+
+#### Footer 
+* Contains the Social Media icons what would navigate the users to the website media page. 
+
+![feature 4](/docs/features/feature4.png)
 
 ### Contact page (contact.html)
 
