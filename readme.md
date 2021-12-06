@@ -51,6 +51,27 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 #### Site owner
 1. As a site owner, I want to receive feedback from the users easily. 
 
+### Scope
+
+The project scope was outlined as followed:
+* Easily understood navigation whent he user arrives to the main page.
+* How-to section explains the rules of the game.
+* Level selector so the user can launch the game.
+* How-to section disappers and game board loading after game level selected. 
+* Timer starting when the game is selected.
+* Steps count as user turning the cards.
+* Score count as user matching he cars.
+* Reload button to to reset the game.
+* Need help? button if the user needs help. 
+* Feedback once the game is completed. 
+* Contact page to leave feedback to the website owner.
+* 404 page with return home button if the user tries to navigate to page which doesn't exist. 
+
+Future improvements:
+* Website to memorize user previous score and times and provide with personal best time. 
+* Website to challenger users against each other time as per their age. 
+* Audio animation when cards a clicked and matched and game completed. 
+
 
 ## **3. Features**
 ## **4. Technologies used:**
