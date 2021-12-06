@@ -134,8 +134,11 @@ Validation is added to the input fields so empty message cannot be sent without 
 ![feature 7](/docs/features/feature7.png)
 
 ### 404 Page (404.html)
+* Contains feedback to teh user and something didn't go according to the plan.
+* Contains a Return to Game button what makes it easy for the user to navigate back to the main page. 
 
-1. Header - contains the navigation bar, main title 
+![feature 8](/docs/features/feature8.png)
+
 ## **4. Technologies used:**
 The following languages and framework were used to create this project.  
 * HTML5 – provided the main structure of the website.
