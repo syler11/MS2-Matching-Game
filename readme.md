@@ -76,14 +76,22 @@ Future improvements:
 The goal of the design was to create a visually appealing game which attractive for younger kids. 
 
 #### Colours:
+**Background colour:** #000 with a canvas image covering the body area.  
+**Font colour:** default #fff and rgb(129, 58, 8); for Nav elements, Horizontal line and Level Selector
 
 #### Fonts:
-
+My fontfamily choice is "Fuzzy Bubbles" with Sans Serif fall back. Credit to Google Font. 
 #### Imagery:
+I used a canvas background picture what give an atractive landing page for users to arrive. Credit to Rawpixel for imagery.   
+All Aninal cards were selected to create a fun and appealing experince for users. 
 
-HAving small kids myself (4yrs, 8 yrs)I have taken their opining on board when selecting the design to make sure they would be happy to play the game. 
+#### Structure:
+The website consist of the 2 separated pages namely index.html and contact.html and a 404.html to guide people back to the main website.   
+Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when selecting the design to make sure they would be happy to play the game. 
 
 ## **3. Features**
+
+
 ## **4. Technologies used:**
 The following languages and framework were used to create this project.  
 * HTML5 – provided the main structure of the website.
