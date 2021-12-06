@@ -217,13 +217,22 @@ Solution: higher contast question mark card was used.
 * Font color for nav and Level Selector was changed as it didn't pass the Accessibility contrast test.  
 Solution: #chocolate was used originally but was changed to rgb(129, 58, 8); for higher contrast.  
 
-* Javascript was used index.html page at the Need Help button to makes sure < ahref wouldn't used as a redundant link.
+* Javascript was used index.html page at the Need Help button to makes sure < ahref wouldn't used as a redundant link.  
+Solution: /* Function added to avoid two a href link on the same page - Credit to www.stackoverflow.com */  
+document.getElementById("contactPage").addEventListener("click", gotoContactPage);  
 
-* Towards the second half of the project the main.js was becoming too big so the file was separated into few smaller files what handles the game functionalities. (easygame.js, mdeiumgame.js and hardgame.js)
+function gotoContactPage() {  
+    window.location.assign("https://syler11.github.io/MS2-Matching-Game/contact.html");  
+}
 
-* User was able to open 3 cards so Math.min was used to only allow two cards at the time. 
+* Towards the second half of the project the main.js was becoming too big so the file was separated into few smaller files what handles the game functionalities.  
+ Solution: easygame.js, mediumgame.js and hardgame.js added to asset folder.
 
-* JS Hint flagged up a redundant semi colon at validation so it was removed in easygame.js / mediumgame.js and hardgame.js
+* User was able to open 3 cards in the game.   
+ Solution:  Math.min was used to only allow two cards at the time. 
+
+* JS Hint flagged up a redundant semi colon at validation so it was removed in easygame.js / mediumgame.js and hardgame.js.  
+Solution: semi colon was deleted
 
 * After duplicating the the hardgame.js to create mediumgame.js and easygame.js there were lot of issues preventing the code run.  
 Solutions: All name changes were added correctly so the game would function properly. 
