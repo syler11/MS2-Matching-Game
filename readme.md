@@ -159,8 +159,10 @@ The following languages and framework were used to create this project.
 
 ## **5. Testing:**
 
-Games was developed on Windows OS in Goggle Chrome and it was tested in Miscrosoft Edge.
-It was also tested on Apple iPad and iPhone 12. All fully functioning and fully responsive.
+Games was developed on Windows OS in Goggle Chrome and it was tested in Miscrosoft Edge.  
+It was also tested on Apple iPad and iPhone 12.   
+All fully functioning and fully responsive.
+My kids aged 4 and 8 were appropiate testing subjects and both of them managed to complete the game and navigate on the website. 
 
 ### HTML Validation
 
@@ -186,6 +188,10 @@ It was also tested on Apple iPad and iPhone 12. All fully functioning and fully 
 4. I generated a report for the index.html page 
 
 ![Google Lighthouse report](/docs\validation\index.html%20Google%20Lighthouse%20Performace.png)
+
+### JS Hint
+
+
 
 ## **6. Bugs:**
 
