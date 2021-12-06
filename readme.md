@@ -89,6 +89,13 @@ All Aninal cards were selected to create a fun and appealing experince for users
 The website consist of the 2 separated pages namely index.html and contact.html and a 404.html to guide people back to the main website.   
 Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when selecting the design to make sure they would be happy to play the game. 
 
+#### Wireframes:
+Wireframes are uploaded in pdf form for Desktop, Tablet and Mobile screensizes. 
+Click on link below.  
+[Desktop wireframe](https://syler11.github.io/MS2-Matching-Game/docs/wireframes/MS2MatchingGameDesktop.pdf)  
+Tablet wireframe  
+Mobile wireframe  
+
 ## **3. Features**
 
 ### Home page (index.html)
