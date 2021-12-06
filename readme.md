@@ -100,11 +100,15 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 ![feature 1](/docs/features/feature1.png)
 
 #### Main section
-*Contains the how to section which outline the rules of the game
+* Contains the how to section which outline the rules of the game
 
 ![feature 2](/docs/features/feature2.png)
 
-### Contacy page (contact.html)
+* Contains the Level Selector what will launch the games by clicking either on the Easy, Medium or Hard level.
+
+![feature 3](/docs/features/feature3.png)
+
+### Contact page (contact.html)
 
 1. Header - contains the navigation bar, main title 
 ## **4. Technologies used:**
