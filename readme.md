@@ -82,7 +82,8 @@ The goal of the design was to create a visually appealing game which attractive 
 #### Fonts:
 My fontfamily choice is "Fuzzy Bubbles" with Sans Serif fall back. Credit to Google Font. 
 #### Imagery:
-I used a canvas background picture what give an atractive landing page for users to arrive. Credit to Rawpixel for imagery.   
+I used a canvas background picture what give an atractive landing page for users to arrive.   
+Credit to Rawpixel for imagery.     
 All Aninal cards were selected to create a fun and appealing experince for users. 
 
 #### Structure:
@@ -200,6 +201,37 @@ My kids aged 4 and 8 were appropiate testing subjects and both of them managed t
 
 #### Hardgame.js Validation
 ![hardgame.js Validation](/docs/validation/hardgame.js-validation.png) 
+
+### User stories testing
+
+#### First-time users
+1. As first-time user, I want to play and enjoy the game.  
+User can start the game by selecting any level to play.
+2. As first-time user, I want to understand the objective of the game.  
+User can find the game rules in the how-to section on the main page.
+3. As first-time user, I want to try all different level.  
+User can select any level when arrives to the main page or after in-game.
+4. As first-time user, I want to able to play on any devices reagrdless the screen size.  
+User can play the game onany screen sizes as the website is fully responsive.  
+5. As first-time user, I want to see able to follow my progress with steps and score count.  
+User can follow their progress via the steps and score count right below the cards. 
+6. As first-time user, I want to see how long does it take to complete the game.
+User can monitor their time via the timer which also stops when the game is completed. 
+7. As first-time user, I want to navigate the website easily. 
+The navigation bar allows the user to intuitively and easily move between the various pages.
+
+##### Regular visitor
+1. As a regular visitor, I want to mesaure my time to see my progress.  
+User can measure his time everytime when competes the game. Timer will pause. 
+2. As a regular visitor, I want to select different level to challenge myself.  
+User can select any level when arrives to the main page or after in-game. 
+3. As a regular visitor, I want to send feedback of the game.  
+User can easily send emails via the contact.html page email form. 
+
+
+#### Site owner
+1. As a site owner, I want to receive feedback from the users easily.    
+Site woner can easily receive emails via the contact.html page email form. 
 
 ## **6. Bugs:**
 
