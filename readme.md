@@ -93,8 +93,8 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 Wireframes are uploaded in pdf form for Desktop, Tablet and Mobile screensizes. 
 Click on link below.  
 [Desktop wireframe](https://syler11.github.io/MS2-Matching-Game/docs/wireframes/MS2MatchingGameDesktop.pdf)  
-Tablet wireframe  
-Mobile wireframe  
+[Tablet wireframe](https://syler11.github.io/MS2-Matching-Game/docs/wireframes/MS2MatchingGameTablet.pdf)  
+[Mobile wireframe](https://syler11.github.io/MS2-Matching-Game/docs/wireframes/MS2MatchingGameMobile.pdf)  
 
 ## **3. Features**
 
