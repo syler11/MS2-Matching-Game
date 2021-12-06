@@ -96,8 +96,13 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 * Contains the navigation bar 
 * Main title
 * Description of the website
+ 
+![feature 1](/docs/features/feature1.png)
 
+#### Main section
+*Contains the how to section which outline the rules of the game
 
+![feature 2](/docs/features/feature2.png)
 
 ### Contacy page (contact.html)
 
