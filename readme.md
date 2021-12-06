@@ -187,7 +187,7 @@ My kids aged 4 and 8 were appropiate testing subjects and both of them managed t
 3. I navigated to the Lighthouse menu option (usually the option is not visible but clicking on the  >> sign will reveal it)
 4. I generated a report for the index.html page 
 
-![Google Lighthouse report](/docs\validation\index.html%20Google%20Lighthouse%20Performace.png)
+![Google Lighthouse report](/docs/validation/index.html%20Google%20Lighthouse%20Performace.png)
 
 ### JS Hint Validation
 #### Main Js Validation
@@ -205,6 +205,8 @@ My kids aged 4 and 8 were appropiate testing subjects and both of them managed t
 
 Animal cards didn't display all 6 cards in a lime but pushed one card below. 
 Solution: once class="row" was applied to the div all 6 cards displayed in a row.
+
+
 
 ## **7. Deployment:**
 
@@ -253,17 +255,17 @@ Once I have connected to my Github account all commit were pushed using VS Code.
 
 ## **8. Credits:**
 ### Media Credits
-Credit to https://codeinstitute.net/ for the lesson on email.js
-Credit to https://favicon.io/favicon-converter/ for the Favicon  
-Credit to https://websitemockupgenerator.com/ for the Website mockup picture  
-Credit to https://fontawesome.com/ for the Icona displayed on the website  
-Credit to https://validator.w3.org/ for the html and css validation
-Credit to https://wave.webaim.org/ for accessibility check for the website
-Credit to https://www.emailjs.com/ for email sending functionality for the website 
-Credit to https://www.google.com/ for the Lighthouse report
-Credit to https://stackoverflow.com/ for being a valuabe source for various function
-Credit to https://www.youtube.com/watch?v=tjyDOHzKN0w for Ania Kubow for the base of the card game
-Credit to https://www.youtube.com/watch?v=dtKciwk_si4 for Florin Pop for various function (Step & Score count among many other things)
+Credit to https://codeinstitute.net/ for the lesson on email.js  
+Credit to https://favicon.io/favicon-converter/ for the Favicon    
+Credit to https://websitemockupgenerator.com/ for the Website mockup picture    
+Credit to https://fontawesome.com/ for the Icona displayed on the website    
+Credit to https://validator.w3.org/ for the html and css validation  
+Credit to https://wave.webaim.org/ for accessibility check for the website  
+Credit to https://www.emailjs.com/ for email sending functionality for the website   
+Credit to https://www.google.com/ for the Lighthouse report  
+Credit to https://stackoverflow.com/ for being a valuabe source for various function  
+Credit to https://www.youtube.com/watch?v=tjyDOHzKN0w for Ania Kubow for the base of the card game  
+Credit to https://www.youtube.com/watch?v=dtKciwk_si4 for Florin Pop for various function (Step & Score count among many other things)  
 ### Image credits
 https://www.rawpixel.com/ - background.jpg  
 https://www.rawpixel.com/ - question-mark.png  
@@ -281,7 +283,7 @@ https://www.rawpixel.com/ - monkey.png
 
 ### Acknowledgment
 
-I would like to thank my kids who provided me feedback during the projects to make sure they would have fun while they play. They had. :)
-I would like to thank my wife to put up with me when I basically disappeared for a week to finish the project on time after the tight time frame between my course reactivation and MS2 assessment deadline. 
+I would like to thank my kids who provided me feedback during the projects to make sure they would have fun while they play. They had. :)  
+I would like to thank my wife to put up with me when I basically disappeared for a week to finish the project on time after the tight time frame between my course reactivation and MS2 assessment deadline.   
 I would like to thank you to my mentor Mo Shami for the guidance. 
 
