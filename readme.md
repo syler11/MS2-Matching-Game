@@ -190,7 +190,7 @@ My kids aged 4 and 8 were appropiate testing subjects and both of them managed t
 ![Google Lighthouse report](/docs\validation\index.html%20Google%20Lighthouse%20Performace.png)
 
 ### JS Hint
-
+![main.js Validation](/docs/validation/main.js-validation.png) 
 
 
 ## **6. Bugs:**

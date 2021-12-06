@@ -72,7 +72,7 @@ function checkMatchEasy() {
             animalCardEasy[animalCardEasySecond].setAttribute('src', './assets/images/question-mark.png');
             animalCardEasy[animalCardEasyFirst].setAttribute('alt', 'Card back, select to turn');
             animalCardEasy[animalCardEasySecond].setAttribute('alt', 'Card back, select to turn');
-        };
+        }
     }
     animalCardEasySelected = [];
     animalCardEasySelectedId = [];
@@ -89,13 +89,6 @@ function correctMatchEasy() {
 
 /* Reloading the game with Reload button or Level seletor */
 document.getElementById('reload').addEventListener('click', resetEasyGame);
-document.getElementById('hardLevel').addEventListener('click', resetHardGame);
-document.getElementById('mediumLevel').addEventListener('click', resetMediumGame);
-document.getElementById('easyLevel').addEventListener('click', loadEasyGame);
-
-
-
-
 
 function resetEasyGame() {
     animalCardEasySelected = [];

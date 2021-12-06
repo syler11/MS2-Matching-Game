@@ -72,7 +72,7 @@ function checkMatchMedium() {
             animalCardMediumImg[animalCardMediumSecond].setAttribute('src', './assets/images/question-mark.png');
             animalCardMediumImg[animalCardMediumFirst].setAttribute('alt', 'Card back, select to turn');
             animalCardMediumImg[animalCardMediumSecond].setAttribute('alt', 'Card back, select to turn');
-        };
+        }
     }
     animalCardMediumSelected = [];
     animalCardMediumSelectedId = [];
