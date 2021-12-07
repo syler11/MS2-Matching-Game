@@ -50,7 +50,9 @@ function turnAnimalCardMedium() {
     animalCardMediumSelected.length = Math.min(animalCardMediumSelected.length, 2);
 }
 
-/* Checks whether the turned cards are a match or not. If yes and cards will stick if noy they will turn back. In the meantime it wil records the steps and score */
+/* Checks whether the turned cards are a match or not. 
+If yes and cards will stick if noy they will turn back. 
+In the meantime it wil records the steps and score */
 function checkMatchMedium() {
     var animalCardMediumImg = document.querySelectorAll('img');
     const animalCardMediumFirst = animalCardMediumSelectedId[0];
@@ -106,7 +108,8 @@ function resetMediumGame() {
     resetTimer();
 }
 
-/* Function clear the gameBoard and reload the selected game level Credit to Stackoverflow (clearing div content) */
+/* Function clear the gameBoard and reload the selected game level 
+Credit to Stackoverflow (clearing div content) Line 118-126 */
 document.getElementById('mediumLevel').addEventListener("click", clearContentMedium)
 
 /**
