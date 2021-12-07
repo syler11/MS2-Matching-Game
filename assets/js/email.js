@@ -1,3 +1,4 @@
+/* Variables for email.js */
 let formName = document.getElementById('fromName');
 let formEmail = document.getElementById('email');
 let message = document.getElementById('message');
@@ -5,8 +6,8 @@ var errorMsgName = document.getElementById('name-error');
 var errorMsgEmail = document.getElementById('email-error');
 var errorMsgMsg = document.getElementById('message-error');
 
+/* Validation to make sure that all fields have value to send */
 function validateEmailForm() {
-    
     const name = document.querySelector('#fromName').value;
     const email = document.querySelector('#email').value;
     const msg = document.querySelector('#message').value;
@@ -25,8 +26,9 @@ function validateEmailForm() {
     return false;
 }
 
+/* Function will send the the contactFrom values to the site owner if validation passed. 
+/* Code written with the help of the official EmailJS tuttorial https://www.emailjs.com/docs/tutorial/creating-contact-form/ */
 function sendEmail() {
-  
     errorMsgName.remove();
     errorMsgEmail.remove();
     errorMsgMsg.remove();
@@ -37,12 +39,12 @@ function sendEmail() {
        'message': message.value
     }).then(
         function (response) {
-            // Success message
-           alert('Message was successfully sent!');
+            // Email sent - Success message
+           alert('Your message was successfully sent!');
        },
         function (error) {
-            // Error message
-           alert('Whoops, your message has not been sent. All the required fields are filled in correctly?');
+            // Email failed - Error message
+           alert('Ooopsie, your message has not been sent. All the required fields are filled in correctly?');
        },
 
        );
@@ -50,8 +52,7 @@ function sendEmail() {
        resetForm();
 };
 
-// Resetting from after sending message
-
+/* Resetting from after sending message */
 function resetForm() {
     document.getElementById("contactForm").reset();
 }
