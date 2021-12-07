@@ -118,3 +118,10 @@ function correctMatch() {
     alert('Well done you! Why not to try some of the other levels?');
     resetHardGame();
 }
+
+document.getElementById('hardLevel').addEventListener("click", clearContentHard)
+
+function clearContentHard(gameBoard) {
+    document.getElementById('gameBoard').innerHTML = "";
+    launchGameBoard();
+}

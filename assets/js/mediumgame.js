@@ -105,3 +105,10 @@ function resetMediumGame() {
     scoreCount.innerHTML = `0`;
     resetTimer();
 }
+
+document.getElementById('mediumLevel').addEventListener("click", clearContentMedium)
+
+function clearContentMedium(gameBoard) {
+    document.getElementById('gameBoard').innerHTML = "";
+    launchGameBoardMedium();
+}

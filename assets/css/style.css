@@ -105,6 +105,10 @@ footer a {
     background-color: rgb(129, 58, 8);
 }
 
+.timer:hover {
+    background-color: #0d6efd;
+}
+
 /* Media queries */
 
 /* Email from fields are sized up for smaller screen sizes by 10% so it looks better on the screen. */
