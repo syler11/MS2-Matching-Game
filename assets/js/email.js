@@ -50,7 +50,7 @@ function sendEmail() {
        );
        
        resetForm();
-};
+}
 
 /* Resetting from after sending message */
 function resetForm() {

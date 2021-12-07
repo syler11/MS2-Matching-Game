@@ -196,20 +196,35 @@ All fully functioning and fully responsive.
 My kids aged 4 and 8 were appropiate testing subjects and both of them managed to complete the game and navigate on the website. 
 
 ### HTML Validation
-
-![index.html Validation](/docs/validation/index.html%20validation.png)  
-![contact.html Validation](/docs/validation/contact.html%20validation.png)  
-![404.html Validation](/docs/validation/404.html%20validation.png)
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
+<details><summary>index.html</summary>
+<img src="docs/validation/index.html%20validation.png">
+</details>
+<details><summary>contact.html</summary>
+<img src="docs/validation/contact.html%20validation.png">
+</details>
+<details><summary>404.html</summary>
+<img src="docs/validation/404.html%20validation.png">
+</details>
 
 ### CSS Validation 
+The W3C Markup Validation Service was used to validate the CSS of the website. Style.css page pass with no errors no warnings to show.
+<details><summary>style.css</summary>
+<img src="docs/validation/style.css%20validation.png">
+</details>
 
-![style.css Validation](/docs/validation/style.css%20validation.png)
 
 ### Accessibility 
-
-![index.html Accessibility Certificate](/docs/validation/index.html%20accessibility.png)
-![contact.html Accessibility Certificate](/docs/validation/contact.html%20accessibility.png)
-![404.html Accessibility Certificate](/docs/validation/404.html%20accessibility.png)
+The WAVE WebAIM web accessibility evaluation tool what measures accessibility standards. All pages pass with 0 errors.
+<details><summary>index.html Accessiblity result</summary>
+<img src="docs/validation/index.html%20accessibility.png">
+</details>
+<details><summary>contact.html Accessiblity result</summary>
+<img src="docs/validation/contact.html%20accessibility.png">
+</details>
+<details><summary>404.html Accessiblity result</summary>
+<img src="docs/validation/404.html%20accessibility.png">
+</details>
 
 ### Chrome Lighthouse Test
 
@@ -217,20 +232,27 @@ My kids aged 4 and 8 were appropiate testing subjects and both of them managed t
 2. I used CTRL+SHIFT+I key command to prompt the Developer Tool.
 3. I navigated to the Lighthouse menu option (usually the option is not visible but clicking on the  >> sign will reveal it)
 4. I generated a report for the index.html page 
-
-![Google Lighthouse report](/docs/validation/index.html%20Google%20Lighthouse%20Performace.png)
+<details><summary>Chrome Lighthouse report</summary>
+<img src="docs/validation/index.html%20Google%20Lighthouse%20Performace.png">
+</details>
 
 ### JS Hint Validation
-#### Main Js Validation
-![main.js Validation](/docs/validation/main.js-validation.png) 
-
-#### Easygame.js Validation 
-![easygame.js Validation](/docs/validation/easygame.js-validation.png) 
-#### Mediumgame.js Validation
-![mediumgame.js Validation](/docs/validation/mediumgame.js-validation.png) 
-
-#### Hardgame.js Validation
-![hardgame.js Validation](/docs/validation/hardgame.js-validation.png) 
+JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascript files. No significant issues were found.
+<details><summary>main.js validation</summary>
+<img src="docs/validation/main.js-validation.png">
+</details>
+<details><summary>easygame.js validation</summary>
+<img src="docs/validation/easygame.js-validation.png">
+</details>
+<details><summary>mediumgame.js validation</summary>
+<img src="docs/validation/mediumgame.js-validation.png">
+</details>
+<details><summary>hardgame.js validation</summary>
+<img src="docs/validation/hardgame.js-validation.png">
+</details>
+<details><summary>email.js validation</summary>
+<img src="docs/validation/email.js%20validation.png">
+</details>
 
 ### User stories testing
 
