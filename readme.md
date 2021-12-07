@@ -269,6 +269,10 @@ Solution: semi colon was deleted
 * After duplicating the the hardgame.js to create mediumgame.js and easygame.js there were lot of issues preventing the code run.  
 Solutions: All name changes were added correctly so the game would function properly. 
 
+* In game selector wasn't functioning as the exisitng fnction couldn't load the game and giving error in console.
+Many function was tested e.g. reload page and reset board game but after page reload the code wasn't executing anymore.     
+Soltuion: Clearing the gameboard div only and relaunching the gameboard solved the issue.
+
 
 
 
@@ -328,7 +332,7 @@ Credit to https://validator.w3.org/ for the html and css validation
 Credit to https://wave.webaim.org/ for accessibility check for the website  
 Credit to https://www.emailjs.com/ for email sending functionality for the website   
 Credit to https://www.google.com/ for the Lighthouse report  
-Credit to https://stackoverflow.com/ for being a valuabe source for various function  
+Credit to https://stackoverflow.com/ for being a valuabe source for various function e.g. in-game selector buttons /Clearing div content/  
 Credit to https://www.youtube.com/watch?v=tjyDOHzKN0w for Ania Kubow for the base of the card game  
 Credit to https://www.youtube.com/watch?v=dtKciwk_si4 for Florin Pop for various function (Step & Score count among many other things)  
 ### Image credits
