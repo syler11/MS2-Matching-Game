@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const stepsCount = document.querySelector('#stepsCount');
 const scoreCount = document.querySelector('#scoreCount');
 
-/* Game timer */
+/* Game timer function */
 var totalSeconds = 0;
 
 function setTimer() {
@@ -52,6 +52,11 @@ function setTimer() {
     minutes.innerHTML = pad(parseInt(totalSeconds / 60));
 }
 
+/**
+ * 
+ * @param {number} val Adding additional 0 if time value is single digit
+ * @returns 
+ */
 function pad(val) {
     var valString = val + '';
     if (valString.length < 2) {
@@ -61,7 +66,7 @@ function pad(val) {
     }
 }
 
-/* Steps counter */
+/* Steps counter incrementing by 1 */
 function stepsCounter() {
     stepsCount.innerHTML++;
 }
