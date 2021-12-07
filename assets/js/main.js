@@ -1,8 +1,6 @@
 //To keep the code relatively short Arrays, Global variables and functions were moved to main.js leaving a much tidier code for game function. 
 
-
 /* Animal card array */
-
 const animalCards = [
     { name: 'dog', img: './assets/images/dog.png', },
     { name: 'dog', img: './assets/images/dog.png', },
@@ -30,7 +28,6 @@ document.getElementById("contactPage").addEventListener("click", gotoContactPage
 
 function gotoContactPage() {
     window.location.assign("https://syler11.github.io/MS2-Matching-Game/contact.html");
-
 }
 
 /* Hide certain dom elements on page load */
@@ -40,15 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('gameOutput').classList.add('no-display');
 });
 
-
-
-
 /* Global variable declared */
 const stepsCount = document.querySelector('#stepsCount');
 const scoreCount = document.querySelector('#scoreCount');
 
 /* Game timer */
-
 var totalSeconds = 0;
 
 function setTimer() {
