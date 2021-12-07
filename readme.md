@@ -8,6 +8,8 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 ## Table of Content
 
 1. [Project Goals](#project-goals)
+    1. Website owner goals
+    2. User goals
 2. [UX](#user-experience)
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
