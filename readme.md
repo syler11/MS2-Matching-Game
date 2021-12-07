@@ -11,12 +11,34 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
     1. Website owner goals
     2. User goals
 2. [UX](#user-experience)
+    1. User stories
+    2. Scope
+    3. Design
+    4. Colours
+    5. Fonts
+    6. Imagery
+    7. Structure
+    8. Wireframes
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
 5. [Testing](#testing)
+    1. HMTL Validation
+    2. CSS Validation
+    3. Accessiblity Validation
+    4. Lighthouse test
+    5. JS Hint Validation
+    6. User stories testing
 6. [Bugs](#Bugs-found-and-resolved-during-development)
 7. [Deployment](#deployment)
+    1. GitHub Pages
+    2. Clone a Respirosatory
+    3. Browser preview
+    4. VS Code
+    5. Email.js
 8. [Credits](#credits)
+    1. Media Credits
+    2. Image Credits
+    3. Acknowledgment
 
 
 ## **1. Project Goals**
