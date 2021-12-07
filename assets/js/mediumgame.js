@@ -109,6 +109,9 @@ function resetMediumGame() {
 /* Function clear the gameBoard and reload the selected game level Credit to Stackoverflow (clearing div content) */
 document.getElementById('mediumLevel').addEventListener("click", clearContentMedium)
 
+/**
+ * @param {function} gameBoard index.html div section where the game is displayed
+ */
 function clearContentMedium(gameBoard) {
     document.getElementById('gameBoard').innerHTML = "";
     launchGameBoardMedium();

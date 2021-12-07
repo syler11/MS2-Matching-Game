@@ -109,6 +109,9 @@ function resetEasyGame() {
 /* Function clear the gameBoard and reload the selected game level Credit to Stackoverflow (clearing div content) */
 document.getElementById('easyLevel').addEventListener("click", clearContentEasy)
 
+/**
+ * @param {function} gameBoard index.html div section where the game is displayed
+ */
 function clearContentEasy(gameBoard) {
     document.getElementById('gameBoard').innerHTML = "";
     launchGameBoardEasy();

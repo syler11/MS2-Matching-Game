@@ -122,6 +122,9 @@ function correctMatch() {
 /* Function clear the gameBoard and reload the selected game level Credit to Stackoverflow (clearing div content) */
 document.getElementById('hardLevel').addEventListener("click", clearContentHard)
 
+/**
+ * @param {function} gameBoard index.html div section where the game is displayed
+ */
 function clearContentHard(gameBoard) {
     document.getElementById('gameBoard').innerHTML = "";
     launchGameBoard();

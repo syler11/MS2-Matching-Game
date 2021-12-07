@@ -354,5 +354,5 @@ https://www.rawpixel.com/ - monkey.png
 
 I would like to thank my kids who provided me feedback during the projects to make sure they would have fun while they play. They had. :)  
 I would like to thank my wife to put up with me when I basically disappeared for a week to finish the project on time after the tight time frame between my course reactivation and MS2 assessment deadline.   
-I would like to thank my mentor Mo Shami for the guidance. 
+I would like to thank my mentor Mo Shami for the guidance and support. 
 
