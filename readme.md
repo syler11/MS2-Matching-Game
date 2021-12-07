@@ -93,20 +93,18 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 
 <details><summary>Main screen</summary>
 <img src="docs/wireframes/main-screen.png">
+</details>
 <details><summary>Game screen</summary>
-<img src="docs/wireframes/main-screen.png">
+<img src="docs/wireframes/game-screen.png">
+</details>
 <details><summary>Contact screen</summary>
-<img src="docs/wireframes/main-screen.png">
+<img src="docs/wireframes/contact-screen.png">
+</details>
 <details><summary>404 screen</summary>
-<img src="docs/wireframes/main-screen.png">
-
-Click on link below.  
-[Desktop wireframe](https://syler11.github.io/MS2-Matching-Game/docs/wireframes/MS2MatchingGameDesktop.pdf)  
-[Tablet wireframe](https://syler11.github.io/MS2-Matching-Game/docs/wireframes/MS2MatchingGameTablet.pdf)  
-[Mobile wireframe](https://syler11.github.io/MS2-Matching-Game/docs/wireframes/MS2MatchingGameMobile.pdf)  
+<img src="docs/wireframes/404-screen.png">
+</details>
 
 ## **3. Features**
-
 ### Home page (index.html)
 #### Header
 * Contains the navigation bar 
