@@ -119,6 +119,7 @@ function correctMatch() {
     resetHardGame();
 }
 
+/* Function clear the gameBoard and reload the selected game level Credit to Stackoverflow (clearing div content) */
 document.getElementById('hardLevel').addEventListener("click", clearContentHard)
 
 function clearContentHard(gameBoard) {

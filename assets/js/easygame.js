@@ -106,6 +106,7 @@ function resetEasyGame() {
     resetTimer();
 }
 
+/* Function clear the gameBoard and reload the selected game level Credit to Stackoverflow (clearing div content) */
 document.getElementById('easyLevel').addEventListener("click", clearContentEasy)
 
 function clearContentEasy(gameBoard) {
