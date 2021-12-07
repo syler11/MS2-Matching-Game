@@ -90,14 +90,15 @@ The website consist of the 2 separated pages namely index.html and contact.html 
 Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when selecting the design to make sure they would be happy to play the game. 
 
 #### Wireframes:
-Wireframes are uploaded in pdf form for Desktop, Tablet and Mobile screensizes. 
-<details><summary>Main screen</summary>
-<img src="docs/wireframes/main-screen.png">
-<details><summary>Main screen</summary>
-<img src="docs/wireframes/main-screen.png">
-<details><summary>Main screen</summary>
-<img src="docs/wireframes/main-screen.png">
 
+<details><summary>Main screen</summary>
+<img src="docs/wireframes/main-screen.png">
+<details><summary>Game screen</summary>
+<img src="docs/wireframes/main-screen.png">
+<details><summary>Contact screen</summary>
+<img src="docs/wireframes/main-screen.png">
+<details><summary>404 screen</summary>
+<img src="docs/wireframes/main-screen.png">
 
 Click on link below.  
 [Desktop wireframe](https://syler11.github.io/MS2-Matching-Game/docs/wireframes/MS2MatchingGameDesktop.pdf)  
