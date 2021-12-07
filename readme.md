@@ -31,9 +31,7 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 * Receive interactive feedback from the game
 
 ## **2. UX - User Experience**
-
 ### User stories
-
 #### First-time users
 1. As first-time user, I want to play and enjoy the game.
 2. As first-time user, I want to understand the objective of the game.
@@ -43,14 +41,15 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 6. As first-time user, I want to see how long does it take to complete the game. 
 7. As first-time user, I want to navigate the website easily. 
 
-##### Regular visitor
-1. As a regular visitor, I want to mesaure my time to see my progress.
-2. As a regular visitor, I want to select different level to challenge myself.
-3. As a regular visitor, I want to send feedback of the game. 
+##### Returning visitor
+8. As a regular visitor, I want to mesaure my time to see my progress.
+9. As a regular visitor, I want to select different level to challenge myself.
+10. As a regular visitor, I want to send feedback of the game. 
 
 #### Site owner
-1. As a site owner, I want to receive feedback from the users easily. 
-
+11. As a site owner, I want to receive feedback from the users easily.
+12. As a site owner, I want to make sure that the website is flly responsive. 
+13. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
 ### Scope
 
 The project scope was outlined as followed:
@@ -92,6 +91,14 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 
 #### Wireframes:
 Wireframes are uploaded in pdf form for Desktop, Tablet and Mobile screensizes. 
+<details><summary>Main screen</summary>
+<img src="docs/wireframes/main-screen.png">
+<details><summary>Main screen</summary>
+<img src="docs/wireframes/main-screen.png">
+<details><summary>Main screen</summary>
+<img src="docs/wireframes/main-screen.png">
+
+
 Click on link below.  
 [Desktop wireframe](https://syler11.github.io/MS2-Matching-Game/docs/wireframes/MS2MatchingGameDesktop.pdf)  
 [Tablet wireframe](https://syler11.github.io/MS2-Matching-Game/docs/wireframes/MS2MatchingGameTablet.pdf)  
