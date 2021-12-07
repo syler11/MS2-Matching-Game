@@ -332,9 +332,9 @@ Credit to https://validator.w3.org/ for the html and css validation
 Credit to https://wave.webaim.org/ for accessibility check for the website  
 Credit to https://www.emailjs.com/ for email sending functionality for the website   
 Credit to https://www.google.com/ for the Lighthouse report  
-Credit to https://stackoverflow.com/ for being a valuabe source for various function e.g. in-game selector buttons /Clearing div content/  
+Credit to https://stackoverflow.com/ for being a valuabe source for various functions e.g. in-game selector buttons /Clearing div content/  
 Credit to https://www.youtube.com/watch?v=tjyDOHzKN0w for Ania Kubow for the base of the card game  
-Credit to https://www.youtube.com/watch?v=dtKciwk_si4 for Florin Pop for various function (Step & Score count among many other things)  
+Credit to https://www.youtube.com/watch?v=dtKciwk_si4 for Florin Pop for various functions (Step & Score count among many other things)
 ### Image credits
 https://www.rawpixel.com/ - background.jpg  
 https://www.rawpixel.com/ - question-mark.png  
@@ -349,9 +349,7 @@ https://www.rawpixel.com/ - giraffe.png
 https://www.rawpixel.com/ - frog.png  
 https://www.rawpixel.com/ - monkey.png  
 
-
 ### Acknowledgment
-
 I would like to thank my kids who provided me feedback during the projects to make sure they would have fun while they play. They had. :)  
 I would like to thank my wife to put up with me when I basically disappeared for a week to finish the project on time after the tight time frame between my course reactivation and MS2 assessment deadline.   
 I would like to thank my mentor Mo Shami for the guidance and support. 

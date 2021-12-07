@@ -1,5 +1,4 @@
 /* Hide and reveal certain dom elemtns once the game level is selected */
-
 function displayGame() {
     document.getElementById('levelSelector').classList.remove('no-display');
     document.getElementById('gameBoard').classList.remove('no-display');
@@ -9,13 +8,13 @@ function displayGame() {
 }
 
 /* Main page Level selector before the game is initiated */
-
-
 document.getElementById('hard-game').addEventListener('click', loadGame);
 
-/* In-game Level selector after the game is initiated */
-
-document.getElementById('hardLevel').addEventListener('click', resetHardGame);
+/* Variables for hard level game */
+var animalCardsSelected = [];
+var animalCardsSelectedId = [];
+var animalCardsCorrect = [];
+const gameGrid = document.querySelector('#gameBoard');
 
 /* Loading the game after selecting the level on the index page */
 function loadGame() {
@@ -26,12 +25,7 @@ function loadGame() {
     setInterval(setTimer, 800);
 }
 
-var animalCardsSelected = [];
-var animalCardsSelectedId = [];
-var animalCardsCorrect = [];
-const gameGrid = document.querySelector('#gameBoard');
-
-/* Creating gameboard with showing back of the card */
+/* Creating gameboard with showing back of the card Credit: Ania Kubow */
 function launchGameBoard() {
     animalCards.sort(() => 0.5 - Math.random());
     for (let i = 0; i < animalCards.length; i++) {
@@ -62,6 +56,7 @@ function turnAnimalCard() {
     animalCardsSelected.length = Math.min(animalCardsSelected.length, 2);
 }
 
+/* Checks whether the turned cards are a match or not. If yes and cards will stick if noy they will turn back. In the meantime it wil records the steps and score */
 function checkMatch() {
     var animalCards = document.querySelectorAll('img');
     const animalCardFirst = animalCardsSelectedId[0];
@@ -97,6 +92,7 @@ function checkMatch() {
 document.getElementById('reload').addEventListener('click', resetHardGame);
 document.getElementById('hardLevel').addEventListener('click', resetHardGame);
 
+/* Clears the array holders and reshuffles the card and display the default questiion mark card */
 function resetHardGame() {
     animalCardsSelected = [];
     animalCardsSelectedId = [];

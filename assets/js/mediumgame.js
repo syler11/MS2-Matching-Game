@@ -1,10 +1,10 @@
-
 /* This statement will make sure only 12 cards will be displayed */
 const animalCardMedium = animalCards.slice(0, 12);
 
 /* Button wil initiate the launch of the medium level game */
 document.getElementById('medium-game').addEventListener('click', loadMediumGame);
 
+/* Variables for medium level game */
 var animalCardMediumSelected = [];
 var animalCardMediumSelectedId = [];
 var animalCardMediumCorrect = [];
@@ -19,9 +19,7 @@ function loadMediumGame() {
     setInterval(setTimer, 800);
 }
 
-/* Variables for medium level game */
-
-/* Creating gameboard with showing back of the card */
+/* Creating gameboard with showing back of the card Credit: Ania Kubow */
 function launchGameBoardMedium() {
     animalCardMedium.sort(() => 0.5 - Math.random());
     for (let i = 0; i < animalCardMedium.length; i++) {
@@ -52,6 +50,7 @@ function turnAnimalCardMedium() {
     animalCardMediumSelected.length = Math.min(animalCardMediumSelected.length, 2);
 }
 
+/* Checks whether the turned cards are a match or not. If yes and cards will stick if noy they will turn back. In the meantime it wil records the steps and score */
 function checkMatchMedium() {
     var animalCardMediumImg = document.querySelectorAll('img');
     const animalCardMediumFirst = animalCardMediumSelectedId[0];
@@ -82,6 +81,7 @@ function checkMatchMedium() {
     }
 }
 
+/* Display message to users when all cards has been revealed */
 function correctMatchMedium() {
     alert('Well done you! Why not to try some of the other levels?');
     resetMediumGame();

@@ -1,4 +1,3 @@
-
 /* This statement will make sure only 6 cards will be displayed */
 const animalCardEasy = animalCards.slice(0, 6);
 
@@ -20,8 +19,7 @@ function loadEasyGame() {
     setInterval(setTimer, 800);
 }
 
-
-/* Creating gameboard with showing back of the card */
+/* Creating gameboard with showing back of the card Credit: Ania Kubow */
 function launchGameBoardEasy() {
     animalCardEasy.sort(() => 0.5 - Math.random());
     for (let i = 0; i < animalCardEasy.length; i++) {
@@ -52,6 +50,7 @@ function turnAnimalCardEasy() {
     animalCardEasySelected.length = Math.min(animalCardEasySelected.length, 2);
 }
 
+/* Checks whether the turned cards are a match or not. If yes and cards will stick if noy they will turn back. In the meantime it wil records the steps and score */
 function checkMatchEasy() {
     var animalCardEasy = document.querySelectorAll('img');
     const animalCardEasyFirst = animalCardEasySelectedId[0];
@@ -82,6 +81,7 @@ function checkMatchEasy() {
     }
 }
 
+/* Display message to users when all cards has been revealed */
 function correctMatchEasy() {
     alert('Well done you! Why not to try some of the other levels?');
     resetEasyGame();
