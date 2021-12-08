@@ -400,8 +400,8 @@ Solution: higher contrast question mark card was used.
 * Font color for nav and Level Selector was changed as it didn't pass the Accessibility contrast test.  
 Solution: #chocolate was used originally but was changed to rgb(129, 58, 8); for higher contrast.  
 
-* Javascript was used index.html page at the Need Help button to makes sure < ahref wouldn't used as a redundant link.  
-Solution: /* Function added to avoid two a href link on the same page - Credit to www.stackoverflow.com */  
+* Javascript was used index.html page at the Need Help button to make sure "a href" wouldn't used as a redundant link.  
+Solution: /* Function added to avoid two "a href" link on the same page - Credit to www.stackoverflow.com */  
 document.getElementById("contactPage").addEventListener("click", gotoContactPage);  
 
 function gotoContactPage() {  
@@ -417,12 +417,12 @@ function gotoContactPage() {
 * JS Hint flagged up a redundant semi colon at validation so it was removed in easygame.js / mediumgame.js and hardgame.js.  
 Solution: semi colon was deleted
 
-* After duplicating the the hardgame.js to create mediumgame.js and easygame.js there were lot of issues preventing the code run.  
+* After duplicating the hardgame.js to create mediumgame.js and easygame.js there were lot of issues preventing the code run.  
 Solutions: All name changes were added correctly so the game would function properly. 
 
-* In game selector wasn't functioning as the exisitng fnction couldn't load the game and giving error in console.
-Many function was tested e.g. reload page and reset board game but after page reload the code wasn't executing anymore.     
-Soltuion: Clearing the gameboard div only and relaunching the gameboard solved the issue.
+* In game selector wasn't functioning as the exisitng function couldn't load the game and giving error in console.
+Many possible solutions were tested e.g. reload page and reset board game but after page reload the code wasn't executing anymore.     
+Solution: Clearing the gameboard div only and relaunching the gameboard solved the issue.
 
 
 
@@ -461,16 +461,16 @@ Browser preview was used between commits using the following steps...
 4. Once the port 8000 was serving the page was opened by clicking on the Open Browser tab.
 
 ### VS Code
-My personal preference is Code. What was used during this project opposed to MS1 when Gitpod was used.
+My personal preference is using VS Code which fasten up greatly the work compared to using GitPod. 
 Once I have connected to my Github account all commit were pushed using VS Code.
 
 
 ### Email JS
 1. Create an account at emailjs.com 
 2. In the integration screen in the emailjs dashboard, note your userid
-3. Create a 
+3. Create an 
  email service in the Email Services section and note the id
-4. Create a email template in the Email templates section and note the id
+4. Create an email template in the Email templates section and note the id
 5. Update the script sendEmail.js, method sendMail with your user id, email service id and email template id
 
 ## **8. Credits:**
