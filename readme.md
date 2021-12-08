@@ -60,21 +60,20 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 #### First-time users
 1. As first-time user, I want to understand the objective of the game.
 2. As first-time user, I want to try all different level.
-3. As first-time user, I want to able to play on any devices reagrdless the screen size. 
-4. As first-time user, I want to see able to follow my progress with steps and score count. 
-5. As first-time user, I want to see how long does it take to complete the game. 
-6. As first-time user, I want to navigate the website easily. 
-7. As first-time user, I want to get feedbavk that the game is completed.
+3. As first-time user, I want to see able to follow my progress with steps and score count. 
+4. As first-time user, I want to see how long does it take to complete the game. 
+5. As first-time user, I want to navigate the website easily. 
+6. As first-time user, I want to get feedbavk that the game is completed.
 
 ##### Returning visitor
-8. As a regular visitor, I want to mesaure my time to see my progress.
-9. As a regular visitor, I want to select different level to challenge myself.
-10. As a regular visitor, I want to send feedback of the game. 
+7. As a regular visitor, I want to mesaure my time to see my progress.
+8. As a regular visitor, I want to select different level to challenge myself.
+9. As a regular visitor, I want to send feedback of the game. 
 
 #### Site owner
-11. As a site owner, I want to receive feedback from the users easily. 
-12. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
-13. As a site owner, I want to make sure that users can follow the page on social media. 
+10. As a site owner, I want to receive feedback from the users easily. 
+11. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
+12. As a site owner, I want to make sure that users can follow the page on social media. 
 ### Scope
 
 The project scope was outlined as followed:
@@ -137,7 +136,7 @@ The website consist of three separated webpages and 8 features.
 * Contains the navigation bar 
 * Main title
 * Description of the website
-* User story covered: 6
+* User story covered: 5
  <details><summary>Header</summary>
 <img src="docs/features/feature1.png">
 </details>
@@ -145,7 +144,7 @@ The website consist of three separated webpages and 8 features.
 ### Footer 
 * Features on all pages
 * Contains the Social Media icons what would navigate the users to the website media page. 
-* User story covered: 13
+* User story covered: 12
  <details><summary>Footer</summary>
 <img src="docs/features/feature4.png">
 </details>
@@ -159,7 +158,7 @@ The website consist of three separated webpages and 8 features.
 
 ### Main screen levels
 * Contains the Level Selector what will launch the games by clicking either on the Easy, Medium or Hard level.
-* User story covered: 2, 10
+* User story covered: 2, 9
  <details><summary>Main screen levels</summary>
 <img src="docs/features/feature3.png">
 </details>
@@ -170,14 +169,14 @@ The website consist of three separated webpages and 8 features.
 * Contains the playing cards as per the level the user selected. 6 cards for easy, 12 cards for medium and 18 cards for hard level.
 * Contains a reload button what resets the selected game.
 * Contains a Need Help button what navigates to the contact.html page. See further below. 
-* User story covered: 4, 5, 8
+* User story covered: 3, 4, 7
  <details><summary>Game Board</summary>
 <img src="docs/features/feature5.png">
 </details>
 
 #### Game result feedback
 * Contains the game result to the user and also some teasing to try another Levels. 
-* User stroy covered: 7
+* User stroy covered: 6
  <details><summary>User feedback</summary>
 <img src="docs/features/feature6.png">
 </details> 
@@ -185,7 +184,7 @@ The website consist of three separated webpages and 8 features.
 ### Contact page (contact.html)
 * Contains the email form what needs to be completed and submitted to send feedback to the website owner.  
 Validation is added to the input fields so empty message cannot be sent without valid Name, Email address and Message fields. 
-* Users tory covered: 10, 11
+* Users tory covered: 9, 10
  <details><summary>Contact page</summary>
 <img src="docs/features/feature7.png">
 </details>
@@ -193,7 +192,7 @@ Validation is added to the input fields so empty message cannot be sent without 
 ### 404 Page (404.html)
 * Contains feedback to the user and something didn't go according to the plan.
 * Contains a Return to Game button what makes it easy for the user to navigate back to the main page. 
-* User story covered: 12
+* User story covered: 11
  <details><summary>404 Page</summary>
 <img src="docs/features/feature8.png">
 </details>
@@ -295,10 +294,18 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 <img src="docs/features/feature9.png">
 </details>
 
+3. s first-time user, I want to see able to follow my progress with steps and score count. 
 
-2. As first-time user, I want to try all different level.
-3. As first-time user, I want to able to play on any devices reagrdless the screen size. 
-4. As first-time user, I want to see able to follow my progress with steps and score count. 
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game board |By choosing the level and game board displays and the step and score count activated| With every pair of cards turned the step count will incremetn by one if there is a match the score count will increment by one | Works as expected |
+ <details><summary>Main screen levels</summary>
+<img src="docs/features/feature10.png">
+</details>
+
+
+
+
 5. As first-time user, I want to see how long does it take to complete the game. 
 6. As first-time user, I want to navigate the website easily. 
 7. As first-time user, I want to get feedbavk that the game is completed.
