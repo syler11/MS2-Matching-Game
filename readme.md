@@ -47,6 +47,7 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 * Create an easy game what can be played for kids
 * The goal is too create an intuitive game what can be understand even without able to read the rules
 * To engage users to send feedback for future development
+* I want to make sure that the website is fully responsive.
 
 ### User goals
 * Enjoy the game while playing
@@ -71,10 +72,9 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 10. As a regular visitor, I want to send feedback of the game. 
 
 #### Site owner
-11. As a site owner, I want to receive feedback from the users easily.
-12. As a site owner, I want to make sure that the website is flly responsive. 
-13. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
-114. As a site owner, I want to make sure that users can follow the page on social media. 
+11. As a site owner, I want to receive feedback from the users easily. 
+12. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
+13. As a site owner, I want to make sure that users can follow the page on social media. 
 ### Scope
 
 The project scope was outlined as followed:
@@ -145,7 +145,7 @@ The website consist of three separated webpages and 8 features.
 ### Footer 
 * Features on all pages
 * Contains the Social Media icons what would navigate the users to the website media page. 
-* User story covered: 14
+* User story covered: 13
  <details><summary>Footer</summary>
 <img src="docs/features/feature4.png">
 </details>
@@ -191,9 +191,9 @@ Validation is added to the input fields so empty message cannot be sent without 
 </details>
 
 ### 404 Page (404.html)
-* Contains feedback to teh user and something didn't go according to the plan.
+* Contains feedback to the user and something didn't go according to the plan.
 * Contains a Return to Game button what makes it easy for the user to navigate back to the main page. 
-* User story covered: 13
+* User story covered: 12
  <details><summary>404 Page</summary>
 <img src="docs/features/feature8.png">
 </details>
