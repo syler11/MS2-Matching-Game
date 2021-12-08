@@ -63,7 +63,7 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 3. As first-time user, I want to see able to follow my progress with steps and score count. 
 4. As first-time user, I want to see how long does it take to complete the game. 
 5. As first-time user, I want to navigate the website easily. 
-6. As first-time user, I want to get feedbavk that the game is completed.
+6. As first-time user, I want to get feedback that the game is completed.
 
 ##### Returning visitor
 7. As a regular visitor, I want to mesaure my time to see my progress.
@@ -303,12 +303,34 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 <img src="docs/features/feature10.png">
 </details>
 
+4. As first-time user, I want to see how long does it take to complete the game. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game board |By choosing the level and game board displays the timer which is now counting| The timer is counting the seconds from 0:00 | Works as expected |
+ <details><summary>Game board</summary>
+<img src="docs/features/feature10.png">
+</details>
+
+5. As first-time user, I want to navigate the website easily.  
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Header |Loading any webpage| The navigation is displayed at the top of the page on any webpage | Works as expected |
+ <details><summary>Header</summary>
+<img src="docs/features/feature1.png">
+</details>
+
+6. As first-time user, I want to get feedback that the game is completed. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game result feedback |Turning the matches in the game| Display message that the games was finished. | Works as expected |
+ <details><summary>Game result feedback</summary>
+<img src="docs/features/feature6.png">
+</details>
 
 
-
-5. As first-time user, I want to see how long does it take to complete the game. 
-6. As first-time user, I want to navigate the website easily. 
-7. As first-time user, I want to get feedbavk that the game is completed.
 
 ##### Returning visitor
 8. As a regular visitor, I want to mesaure my time to see my progress.
