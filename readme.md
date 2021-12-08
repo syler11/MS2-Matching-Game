@@ -57,13 +57,13 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 ## **2. UX - User Experience**
 ### User stories
 #### First-time users
-1. As first-time user, I want to play and enjoy the game.
-2. As first-time user, I want to understand the objective of the game.
-3. As first-time user, I want to try all different level.
-4. As first-time user, I want to able to play on any devices reagrdless the screen size. 
-5. As first-time user, I want to see able to follow my progress with steps and score count. 
-6. As first-time user, I want to see how long does it take to complete the game. 
-7. As first-time user, I want to navigate the website easily. 
+1. As first-time user, I want to understand the objective of the game.
+2. As first-time user, I want to try all different level.
+3. As first-time user, I want to able to play on any devices reagrdless the screen size. 
+4. As first-time user, I want to see able to follow my progress with steps and score count. 
+5. As first-time user, I want to see how long does it take to complete the game. 
+6. As first-time user, I want to navigate the website easily. 
+7. As first-time user, I want to get feedbavk that the game is completed.
 
 ##### Returning visitor
 8. As a regular visitor, I want to mesaure my time to see my progress.
@@ -74,6 +74,7 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 11. As a site owner, I want to receive feedback from the users easily.
 12. As a site owner, I want to make sure that the website is flly responsive. 
 13. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
+114. As a site owner, I want to make sure that users can follow the page on social media. 
 ### Scope
 
 The project scope was outlined as followed:
@@ -129,27 +130,39 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 </details>
 
 ## **3. Features**
-### Home page (index.html)
-#### Header
+The website consist of three separated webpages and 8 features.
+### Header
+
+* Features on all pages
 * Contains the navigation bar 
 * Main title
 * Description of the website
- 
-![feature 1](/docs/features/feature1.png)
+* User story covered: 6
+ <details><summary>Header</summary>
+<img src="docs/features/feature1.png">
+</details>
 
-#### Main section
-* Contains the how to section which outline the rules of the game
-
-![feature 2](/docs/features/feature2.png)
-
-* Contains the Level Selector what will launch the games by clicking either on the Easy, Medium or Hard level.
-
-![feature 3](/docs/features/feature3.png)
-
-#### Footer 
+### Footer 
+* Features on all pages
 * Contains the Social Media icons what would navigate the users to the website media page. 
+* User story covered: 14
+ <details><summary>Footer</summary>
+<img src="docs/features/feature4.png">
+</details>
 
-![feature 4](/docs/features/feature4.png)
+### Main screen rules
+* Contains the how to section which outline the rules of the game
+* User story covered: 1
+ <details><summary>Footer</summary>
+<img src="docs/features/feature2.png">
+</details>
+
+### Main screen levels
+* Contains the Level Selector what will launch the games by clicking either on the Easy, Medium or Hard level.
+* User story covered: 2, 10
+ <details><summary>Footer</summary>
+<img src="docs/features/feature3.png">
+</details>
 
 #### Game Board
 * Contains the in-game level selector.
@@ -157,25 +170,33 @@ Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when s
 * Contains the playing cards as per the level the user selected. 6 cards for easy, 12 cards for medium and 18 cards for hard level.
 * Contains a reload button what resets the selected game.
 * Contains a Need Help button what navigates to the contact.html page. See further below. 
-
-![feature 5](/docs/features/feature5.png)
+* User story covered: 4, 5, 8
+ <details><summary>Game Board</summary>
+<img src="docs/features/feature5.png">
+</details>
 
 #### Game result feedback
 * Contains the game result to the user and also some teasing to try another Levels. 
-
-![feature 6](/docs/features/feature6.png)
+* User stroy covered: 7
+ <details><summary>User feedback</summary>
+<img src="docs/features/feature6.png">
+</details> 
 
 ### Contact page (contact.html)
 * Contains the email form what needs to be completed and submitted to send feedback to the website owner.  
 Validation is added to the input fields so empty message cannot be sent without valid Name, Email address and Message fields. 
-
-![feature 7](/docs/features/feature7.png)
+* Users tory covered: 10, 11
+ <details><summary>Contact page</summary>
+<img src="docs/features/feature7.png">
+</details>
 
 ### 404 Page (404.html)
 * Contains feedback to teh user and something didn't go according to the plan.
 * Contains a Return to Game button what makes it easy for the user to navigate back to the main page. 
-
-![feature 8](/docs/features/feature8.png)
+* User story covered: 13
+ <details><summary>404 Page</summary>
+<img src="docs/features/feature8.png">
+</details>
 
 ## **4. Technologies used:**
 The following languages and framework were used to create this project.  
