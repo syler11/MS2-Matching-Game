@@ -366,14 +366,23 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 <img src="docs/features/feature13.png">
 </details>
 
-
-
-
-
-
-
-
 11. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| 404 page |User tries to navigate to url which doesn't exist| 404 page will be displayed notifiyng the user that something went wrong and offer the Return to Home button to navigate back to the main page | Works as expected |
+ <details><summary>404 page</summary>
+<img src="docs/features/feature8`.png">
+</details>
+
+
+
+
+
+
+
+
+ 
 12. As a site owner, I want to make sure that users can follow the page on social media.
 
 ## **6. Bugs:**
