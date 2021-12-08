@@ -118,4 +118,5 @@ document.getElementById('mediumLevel').addEventListener("click", clearContentMed
 function clearContentMedium(gameBoard) {
     document.getElementById('gameBoard').innerHTML = "";
     launchGameBoardMedium();
+    resetTimer();
 }

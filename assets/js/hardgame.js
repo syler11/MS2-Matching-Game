@@ -126,4 +126,5 @@ document.getElementById('hardLevel').addEventListener("click", clearContentHard)
 function clearContentHard(gameBoard) {
     document.getElementById('gameBoard').innerHTML = "";
     launchGameBoard();
+    resetTimer();
 }

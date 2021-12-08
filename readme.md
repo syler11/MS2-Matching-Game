@@ -343,9 +343,9 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game board |Turning all the cards| The timer stops when all cars are turned | Works as expected |
+| Game board |Clicking on In-game level selector| Offers all the available level and by clicking initiates the selected game | Works as expected |
  <details><summary>Game board</summary>
-<img src="docs/features/feature10.png">
+<img src="docs/features/feature11.png">
 </details>
 
 

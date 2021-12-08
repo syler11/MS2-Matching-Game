@@ -118,4 +118,5 @@ document.getElementById('easyLevel').addEventListener("click", clearContentEasy)
 function clearContentEasy(gameBoard) {
     document.getElementById('gameBoard').innerHTML = "";
     launchGameBoardEasy();
+    resetTimer();
 }
