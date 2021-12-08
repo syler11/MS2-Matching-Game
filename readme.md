@@ -160,7 +160,7 @@ The website consist of three separated webpages and 8 features.
 ### Main screen levels
 * Contains the Level Selector what will launch the games by clicking either on the Easy, Medium or Hard level.
 * User story covered: 2, 10
- <details><summary>Footer</summary>
+ <details><summary>Main screen levels</summary>
 <img src="docs/features/feature3.png">
 </details>
 
@@ -285,7 +285,16 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
  <details><summary>Main screen rules</summary>
 <img src="docs/features/feature2.png">
 </details>
-#### First-time users
+
+2. As first-time user, I want to try all different level.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Main screen levels |Clicking on the choosen level| The game board loads with the selected level | Works as expected |
+ <details><summary>Main screen levels</summary>
+<img src="docs/features/feature9.png">
+</details>
+
 
 2. As first-time user, I want to try all different level.
 3. As first-time user, I want to able to play on any devices reagrdless the screen size. 
