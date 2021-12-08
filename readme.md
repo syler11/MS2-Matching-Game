@@ -153,7 +153,7 @@ The website consist of three separated webpages and 8 features.
 ### Main screen rules
 * Contains the how to section which outline the rules of the game
 * User story covered: 1
- <details><summary>Footer</summary>
+ <details><summary>Main screen rules</summary>
 <img src="docs/features/feature2.png">
 </details>
 
@@ -277,34 +277,32 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 
 ### User stories testing
 
+1. As first-time user, I want to understand the objective of the game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Main screen rules | Loading the main page| The main screen loads and display the game objectives | Works as expected |
+ <details><summary>Main screen rules</summary>
+<img src="docs/features/feature2.png">
+</details>
 #### First-time users
-1. As first-time user, I want to play and enjoy the game.  
-User can start the game by selecting any level to play.
-2. As first-time user, I want to understand the objective of the game.  
-User can find the game rules in the how-to section on the main page.
-3. As first-time user, I want to try all different level.  
-User can select any level when arrives to the main page or after in-game.
-4. As first-time user, I want to able to play on any devices reagrdless the screen size.  
-User can play the game onany screen sizes as the website is fully responsive.  
-5. As first-time user, I want to see able to follow my progress with steps and score count.  
-User can follow their progress via the steps and score count right below the cards. 
-6. As first-time user, I want to see how long does it take to complete the game.
-User can monitor their time via the timer which also stops when the game is completed. 
-7. As first-time user, I want to navigate the website easily. 
-The navigation bar allows the user to intuitively and easily move between the various pages.
 
-##### Regular visitor
-1. As a regular visitor, I want to mesaure my time to see my progress.  
-User can measure his time everytime when competes the game. Timer will pause. 
-2. As a regular visitor, I want to select different level to challenge myself.  
-User can select any level when arrives to the main page or after in-game. 
-3. As a regular visitor, I want to send feedback of the game.  
-User can easily send emails via the contact.html page email form. 
+2. As first-time user, I want to try all different level.
+3. As first-time user, I want to able to play on any devices reagrdless the screen size. 
+4. As first-time user, I want to see able to follow my progress with steps and score count. 
+5. As first-time user, I want to see how long does it take to complete the game. 
+6. As first-time user, I want to navigate the website easily. 
+7. As first-time user, I want to get feedbavk that the game is completed.
 
+##### Returning visitor
+8. As a regular visitor, I want to mesaure my time to see my progress.
+9. As a regular visitor, I want to select different level to challenge myself.
+10. As a regular visitor, I want to send feedback of the game. 
 
 #### Site owner
-1. As a site owner, I want to receive feedback from the users easily.    
-Site woner can easily receive emails via the contact.html page email form. 
+11. As a site owner, I want to receive feedback from the users easily. 
+12. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
+13. As a site owner, I want to make sure that users can follow the page on social media.
 
 ## **6. Bugs:**
 
