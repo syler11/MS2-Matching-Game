@@ -47,7 +47,7 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 * Create an easy game what can be played for kids
 * The goal is too create an intuitive game what can be understand even without able to read the rules
 * To engage users to send feedback for future development
-* I want to make sure that the website is fully responsive.
+* I want to make sure that the website is fully responsive
 
 ### User goals
 * Enjoy the game while playing
@@ -77,26 +77,26 @@ View the live project [here](https://syler11.github.io/MS2-Matching-Game/).
 ### Scope
 
 The project scope was outlined as followed:
-* Easily understood navigation whent he user arrives to the main page.
+* Easily understood navigation whent the user arrives to the main page.
 * How-to section explains the rules of the game.
 * Level selector so the user can launch the game.
 * How-to section disappers and game board loading after game level selected. 
 * Timer starting when the game is selected.
 * Steps count as user turning the cards.
-* Score count as user matching he cars.
-* Reload button to to reset the game.
+* Score count as user matching the cards.
+* Reload button to reset the game.
 * Need help? button if the user needs help. 
 * Feedback once the game is completed. 
 * Contact page to leave feedback to the website owner.
 * 404 page with return home button if the user tries to navigate to page which doesn't exist. 
 
 Future improvements:
-* Website to memorize user previous score and times and provide with personal best time. 
+* Website to memorize user's previous score and times and compare with personal best time. 
 * Website to challenger users against each other time as per their age. 
-* Audio animation when cards a clicked and matched and game completed. 
+* Audio animation when cards clicked and matched and game completed. 
 
 ### Design
-The goal of the design was to create a visually appealing game which attractive for younger kids. 
+The goal of the design was to create a visually appealing game which attractive for youngS kids. 
 
 #### Colours:
 **Background colour:** #000 with a canvas image covering the body area.  
@@ -107,10 +107,10 @@ My fontfamily choice is "Fuzzy Bubbles" with Sans Serif fall back. Credit to Goo
 #### Imagery:
 I used a canvas background picture what give an atractive landing page for users to arrive.   
 Credit to Rawpixel for imagery.     
-All Aninal cards were selected to create a fun and appealing experince for users. 
+All animal cards were selected to create a fun and appealing experience for users. 
 
 #### Structure:
-The website consist of the 2 separated pages namely index.html and contact.html and a 404.html to guide people back to the main website.   
+The website consist of 3 separated pages namely index.html and contact.html and a 404.html to guide people back to the main website.   
 Having small kids myself (4yrs, 8 yrs)I have taken their opining on board when selecting the design to make sure they would be happy to play the game. 
 
 #### Wireframes:
@@ -176,7 +176,7 @@ The website consist of three separated webpages and 8 features.
 
 #### Game result feedback
 * Contains the game result to the user and also some teasing to try another Levels. 
-* User stroy covered: 6
+* User story covered: 6
  <details><summary>User feedback</summary>
 <img src="docs/features/feature6.png">
 </details> 
@@ -184,7 +184,7 @@ The website consist of three separated webpages and 8 features.
 ### Contact page (contact.html)
 * Contains the email form what needs to be completed and submitted to send feedback to the website owner.  
 Validation is added to the input fields so empty message cannot be sent without valid Name, Email address and Message fields. 
-* Users tory covered: 9, 10
+* User story covered: 9, 10
  <details><summary>Contact page</summary>
 <img src="docs/features/feature7.png">
 </details>
@@ -210,10 +210,10 @@ The following languages and framework were used to create this project.
 
 ## **5. Testing:**
 
-Games was developed on Windows OS in Goggle Chrome and it was tested in Miscrosoft Edge.  
+Game was developed on Windows OS in Goggle Chrome and it was tested in Microsoft Edge.  
 It was also tested on Apple iPad and iPhone 12.   
 All fully functioning and fully responsive.
-My kids aged 4 and 8 were appropiate testing subjects and both of them managed to complete the game and navigate on the website. 
+My kids aged 4 and 8 were appropriate testing subjects. I am glad that both of them managed to complete the game and navigate on the website. 
 
 ### HTML Validation
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
@@ -298,8 +298,8 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game board |By choosing the level and game board displays and the step and score count activated| With every pair of cards turned the step count will incremetn by one if there is a match the score count will increment by one | Works as expected |
- <details><summary>Main screen levels</summary>
+| Game board |By choosing the level and game board displays and the step and score count activated| With every pair of cards turned the step count will increment by one if there is a match the score count will increment by one | Works as expected |
+ <details><summary>Game board</summary>
 <img src="docs/features/feature10.png">
 </details>
 
@@ -370,7 +370,7 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| 404 page |User tries to navigate to url which doesn't exist| 404 page will be displayed notifiyng the user that something went wrong and offer the Return to Home button to navigate back to the main page | Works as expected |
+| 404 page |User tries to navigate to URL which doesn't exist| 404 page will be displayed notifying the user that something went wrong and offer the Return to Home button to navigate back to the main page | Works as expected |
  <details><summary>404 page</summary>
 <img src="docs/features/feature8`.png">
 </details>
@@ -379,21 +379,21 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Footer |Loading the website| Social Media icons are displayed at the bottom of the page and linked to website media accounts | Works as expected |
+| Footer |Loading the website| Social Media icons are displayed at the bottom of the page and linked to website's media accounts | Works as expected |
  <details><summary>Footer</summary>
 <img src="docs/features/feature4`.png">
 </details>
 
 ## **6. Bugs:**
 
-* Animal cards didn't display all 6 cards in a lime but pushed one card below.  
-Solution: once class="row" was applied to the div all 6 cards displayed in a row.
+* Animal cards didn't display all 6 cards in the same line but pushed one card below.  
+Solution: once class="row" was applied to the div, now all 6 cards displayed in a row.
 
-* The social icons and Main Nav werent displaying correctly especially at smaller screen sizes.  
+* The social icons and Main Nav weren't displaying correctly especially at smaller screen sizes.  
 Solution: Media queries were applied to adjust sizing and margin to fit everything in the same row.
 
 * The original question mark card didn't look good with the rest of the page design so I changed halfway through the project.   
-Solution: higher contast question mark card was used.
+Solution: higher contrast question mark card was used.
 
  ![Old / New Question Mark](/assets/images/question-markold-new.png) 
 
