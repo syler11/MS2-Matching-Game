@@ -294,7 +294,7 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 <img src="docs/features/feature9.png">
 </details>
 
-3. s first-time user, I want to see able to follow my progress with steps and score count. 
+3. As first-time user, I want to see able to follow my progress with steps and score count. 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -330,17 +330,33 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 <img src="docs/features/feature6.png">
 </details>
 
+7. As a regular visitor, I want to mesaure my time to see my progress.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game board |Turning all the cards| The timer stops when all cars are turned | Works as expected |
+ <details><summary>Game board</summary>
+<img src="docs/features/feature10.png">
+</details>
+
+8. As a regular visitor, I want to select different level to challenge myself.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game board |Turning all the cards| The timer stops when all cars are turned | Works as expected |
+ <details><summary>Game board</summary>
+<img src="docs/features/feature10.png">
+</details>
 
 
-##### Returning visitor
-8. As a regular visitor, I want to mesaure my time to see my progress.
-9. As a regular visitor, I want to select different level to challenge myself.
-10. As a regular visitor, I want to send feedback of the game. 
+
+
+9. As a regular visitor, I want to send feedback of the game. 
 
 #### Site owner
-11. As a site owner, I want to receive feedback from the users easily. 
-12. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
-13. As a site owner, I want to make sure that users can follow the page on social media.
+10. As a site owner, I want to receive feedback from the users easily. 
+11. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
+12. As a site owner, I want to make sure that users can follow the page on social media.
 
 ## **6. Bugs:**
 
