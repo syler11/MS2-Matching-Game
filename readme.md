@@ -348,12 +348,21 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 <img src="docs/features/feature11.png">
 </details>
 
-
-
-
 9. As a regular visitor, I want to send feedback of the game. 
 
-#### Site owner
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact page |Filling up contact form and clicking yes| If all the input fields are filled the message will be sent and user will get notification with message sent | Works as expected |
+ <details><summary>Contact page</summary>
+<img src="docs/features/feature12.png">
+</details>
+
+
+
+
+
+
+
 10. As a site owner, I want to receive feedback from the users easily. 
 11. As a site owner, I want to make sure that user don't use the backwards button if would navigate to a page which doesn't exist. 
 12. As a site owner, I want to make sure that users can follow the page on social media.
