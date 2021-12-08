@@ -375,15 +375,14 @@ JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascr
 <img src="docs/features/feature8`.png">
 </details>
 
-
-
-
-
-
-
-
- 
 12. As a site owner, I want to make sure that users can follow the page on social media.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer |Loading the website| Social Media icons are displayed at the bottom of the page and linked to website media accounts | Works as expected |
+ <details><summary>Footer</summary>
+<img src="docs/features/feature4`.png">
+</details>
 
 ## **6. Bugs:**
 
